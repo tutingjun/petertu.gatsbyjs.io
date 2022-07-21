@@ -1,7 +1,12 @@
 .container {
   margin: auto;
-  max-width: 500px;
+  padding: 0 0.25rem;
   font-family: sans-serif;
+}
+.container h2 {
+  color: rebeccapurple;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 .heading {
   color: rebeccapurple;
@@ -24,5 +29,10 @@
   font-size: 1rem;
   color: gray;
   font-weight: 700;
-  margin: 3rem 0 0 0;
+  margin: 2rem 0 0 0;
+}
+.blog-post {
+  display: flex;
+  justify-content: space-between;
+  max-height: 250px;
 }
