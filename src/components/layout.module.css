@@ -1,12 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;700;900&family=Merriweather:wght@400;700&display=swap");
+
+:root {
+  --font-family-heading: "Merriweather", -apple-system, BlinkMacSystemFont,
+    "Helvetica Neue", Arial, sans-serif;
+  --gray-7: #4b5056;
+  --font-color-base: var(--gray-7);
+}
 .container {
   margin: auto;
   padding: 0 0.25rem;
   font-family: sans-serif;
 }
 .container h2 {
-  color: rebeccapurple;
+  color: rgb(44, 36, 52);
+  line-height: 1.1;
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  scroll-margin-top: 80px;
   font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  font-family: var(--font-family-heading);
+}
+p,
+ul {
+  color: var(--font-color-base);
+  -webkit-font-smoothing: auto;
+  line-height: 1.7;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.01rem;
+}
+
+ul li ul,
+ol li ol {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+li {
+  line-height: 1.5;
   margin-bottom: 0.5rem;
+  padding-left: 0.25rem;
 }
 .heading {
   color: rebeccapurple;
