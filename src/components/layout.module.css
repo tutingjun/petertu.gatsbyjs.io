@@ -8,7 +8,7 @@
 }
 .container {
   margin: auto;
-  padding: 0 0.25rem;
+  padding: 0.25rem;
   font-family: sans-serif;
 }
 .container h2 {
@@ -71,4 +71,7 @@ li {
   display: flex;
   justify-content: space-between;
   max-height: 250px;
+}
+main {
+  margin: 1em;
 }

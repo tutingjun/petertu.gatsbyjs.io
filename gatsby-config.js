@@ -37,7 +37,17 @@ module.exports = {
         // GitHub Flavored Markdown mode (default: true)
         gfm: true,
         // Plugins configs
-        plugins: [],
+        plugins: [
+          `gatsby-remark-autolink-headers`,
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 800,
+              // linkImagesToOriginal: false,
+              backgroundColor: "transparent",
+            },
+          },
+        ],
       },
     },
   ],

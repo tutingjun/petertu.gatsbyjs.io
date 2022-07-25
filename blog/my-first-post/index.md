@@ -3,6 +3,7 @@ title: "My First Post"
 date: "2021-07-23"
 hero_image: "./k-mitch-hodge-NhphfdnEEL8-unsplash.jpg"
 hero_image_alt: "Photo from unsplash"
+slug: "/blog/my-first-post"
 ---
 
 ## Image test
