@@ -9,8 +9,10 @@ export default function Template({ data }) {
   // const image = getImage(frontmatter.hero_image);
   return (
     <Layout pageTitle={frontmatter.title}>
-      <p>Reading time: {markdownRemark.fields.readingTime.text}</p>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <div className="grid">
+        <p>Reading time: {markdownRemark.fields.readingTime.text}</p>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      </div>
     </Layout>
   );
 }

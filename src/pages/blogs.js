@@ -1,20 +1,19 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import { graphql, Link } from "gatsby";
-import { blogPost } from "../components/layout.module.css";
+
+import "../components/style.css";
 
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="Blog Posts">
       {data.allMarkdownRemark.edges.map((edge) => (
-        <article key={edge.node.id} className={blogPost}>
-          <h2>
-            <Link to={edge.node.frontmatter.slug}>
-              {edge.node.frontmatter.title}
-            </Link>
-          </h2>
-          <p>{edge.node.frontmatter.date}</p>
-        </article>
+        <div key={edge.node.id}>
+          <Link to={edge.node.frontmatter.slug} className="post">
+            <h3>{edge.node.frontmatter.title} </h3>
+            <p>{edge.node.frontmatter.date}</p>
+          </Link>
+        </div>
       ))}
     </Layout>
   );
