@@ -12,22 +12,6 @@ module.exports = {
         path: `${__dirname}/blog`,
       },
     },
-    {
-      resolve: `gatsby-plugin-mdx`,
-      options: {
-        root: __dirname,
-        gatsbyRemarkPlugins: [
-          {
-            resolve: "gatsby-remark-images",
-            options: {
-              maxWidth: 800,
-              linkImagesToOriginal: false,
-              backgroundColor: "transparent",
-            },
-          },
-        ],
-      },
-    },
     "gatsby-transformer-sharp",
     {
       resolve: `gatsby-transformer-remark`,
@@ -39,6 +23,7 @@ module.exports = {
         // Plugins configs
         plugins: [
           `gatsby-remark-autolink-headers`,
+          `gatsby-remark-reading-time`,
           {
             resolve: "gatsby-remark-images",
             options: {
