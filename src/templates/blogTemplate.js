@@ -1,18 +1,17 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
-import { Sidebar } from "../components/sidebar";
+import { Sidebar } from "../components/Sidebar";
 // import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export default function Template({ data }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
-  const tagList = ["asd", "asdd"];
-  const category = "untitled";
+  const showPage = false;
 
   // const image = getImage(frontmatter.hero_image);
   return (
-    <Layout pageTitle={frontmatter.title}>
+    <Layout pageTitle={frontmatter.title} showPage={showPage}>
       <div className="grid">
         {/* <p>Reading time: {markdownRemark.fields.readingTime.text}</p> */}
         <div dangerouslySetInnerHTML={{ __html: html }} />

@@ -6,7 +6,7 @@ import "../components/style.css";
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="Blog Posts">
+    <Layout pageTitle="Blog Posts" showPages={true}>
       {data.allMarkdownRemark.edges.map((edge) => (
         <div key={edge.node.id}>
           <Link to={edge.node.frontmatter.slug} className="post">

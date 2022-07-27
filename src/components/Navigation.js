@@ -36,3 +36,5 @@ export const Navigation = ({ title }) => {
     </section>
   );
 };
+
+export default Navigation;

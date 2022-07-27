@@ -2,7 +2,7 @@ import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { Navigation } from "./Navigation";
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ pageTitle, children, showPages }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -21,7 +21,7 @@ const Layout = ({ pageTitle, children }) => {
       <Navigation />
       <main>
         <div className="container">
-          <h1 className="heading">{pageTitle}</h1>
+          {showPages && <h1 className="heading">{pageTitle}</h1>}
           {children}
         </div>
       </main>
