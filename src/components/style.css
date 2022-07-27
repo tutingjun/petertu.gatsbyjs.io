@@ -208,7 +208,7 @@ h3 {
   align-items: center;
   gap: 0.5rem;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.6);
   padding: 0;
@@ -224,7 +224,7 @@ h3 {
   align-items: center;
   gap: 0.5rem;
   line-height: 1.2;
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: white;
   margin: 0 0.5rem 0 0.25rem;
@@ -258,8 +258,9 @@ h3 {
 }
 
 .grid {
-  display: block;
-  max-width: 800px;
+  display: grid;
+  grid-template-columns: auto 280px;
+  gap: 5rem;
 }
 /* 
 @media screen and (min-width: 1000px) {
@@ -302,3 +303,8 @@ a.post p {
   font-size: 0.8rem;
   font-weight: 500;
 }
+
+/* posts */
+/* .post-sidebar{
+  
+} */

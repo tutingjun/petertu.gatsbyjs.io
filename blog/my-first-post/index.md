@@ -4,6 +4,8 @@ date: "2021-07-23"
 hero_image: "./k-mitch-hodge-NhphfdnEEL8-unsplash.jpg"
 hero_image_alt: "Photo from unsplash"
 slug: "/blog/my-first-post"
+tag: ["das", "adsa", "new taggg"]
+category: "random"
 ---
 
 ## Image test
@@ -12,7 +14,7 @@ slug: "/blog/my-first-post"
 
 ## Welcome to my Blog
 
-This is my first blog post! Isn't it _great_?
+This is my first blog post! Isn't it _great_? The blogs looks better than I expected. Maybe I need to implement the tags and categories to better make my blog posts. I am kind of unsure what to put in the category and tags since it has literally nothing
 
 ## Subsection 1
 

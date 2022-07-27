@@ -20,7 +20,7 @@ export const Navigation = ({ title }) => {
           </Link>
           {mainNavItems.map((item) => (
             <div className="nav-item-outer">
-              <img src={item.icon} alt={item.label} className="nav-image" />
+              {/* <img src={item.icon} alt={item.label} className="nav-image" /> */}
               <Link
                 to={item.url}
                 key={item.label}
