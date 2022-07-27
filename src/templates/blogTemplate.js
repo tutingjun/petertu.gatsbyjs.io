@@ -13,8 +13,20 @@ export default function Template({ data }) {
   return (
     <Layout pageTitle={frontmatter.title} showPage={showPage}>
       <div className="grid">
-        {/* <p>Reading time: {markdownRemark.fields.readingTime.text}</p> */}
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+        <div className="article-content">
+          <div className="post-header medium width">
+            <h1>{frontmatter.title}</h1>
+          </div>
+
+          <section className="segment small">
+            <div
+              id={frontmatter.slug}
+              className="post-content"
+              dangerouslySetInnerHTML={{ __html: html }}
+            />
+          </section>
+        </div>
+
         <Sidebar
           tags={frontmatter.tag}
           category={frontmatter.category}
