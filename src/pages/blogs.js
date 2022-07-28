@@ -6,15 +6,23 @@ import "../components/style.css";
 
 const BlogPage = ({ data }) => {
   return (
-    <Layout pageTitle="Blog Posts" showPages={true}>
-      {data.allMarkdownRemark.edges.map((edge) => (
-        <div key={edge.node.id}>
-          <Link to={edge.node.frontmatter.slug} className="post">
-            <h3>{edge.node.frontmatter.title} </h3>
-            <p>{edge.node.frontmatter.date}</p>
-          </Link>
+    <Layout pageTitle="Blog Posts" showPages={false}>
+      <div className="grid">
+        <div className="article-content">
+          <header className="hero">
+            <h1>Blog Posts</h1>
+          </header>
+          <div className="segment">
+            <h2 className="year">2022</h2>
+            {data.allMarkdownRemark.edges.map((edge) => (
+              <Link to={edge.node.frontmatter.slug} className="post">
+                <h3>{edge.node.frontmatter.title} </h3>
+                <p>{edge.node.frontmatter.dateNoYear}</p>
+              </Link>
+            ))}
+          </div>
         </div>
-      ))}
+      </div>
     </Layout>
   );
 };
@@ -27,7 +35,8 @@ export const query = graphql`
           frontmatter {
             slug
             title
-            date(formatString: "MMMM DD YYYY")
+            year: date(formatString: "YYYY")
+            dateNoYear: date(formatString: "MMMM DD")
           }
           id
         }

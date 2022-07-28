@@ -22,6 +22,13 @@
   --gray-9: #212529;
   --font-color-base: var(--gray-7);
 
+  --green: #51b681;
+  --green-1: #95cd7f;
+  --green-2: #73b18a;
+  --green-3: #4d8994;
+  --green-4: #30619d;
+  --green-5: #30379d;
+
   --orange: #ff7e22;
   --yellow: #fca62a;
   --pink: #e855b3;
@@ -136,6 +143,83 @@ li::marker {
 
 main {
   margin-top: 60px;
+  flex: 1;
+}
+
+/* Hero */
+
+.hero {
+  padding: 1.5rem 0 0;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  .hero.index {
+    padding: 3.5rem 0 2rem;
+  }
+}
+
+.hero h1 {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 700;
+  letter-spacing: -0.06rem;
+  color: var(--font-color-heading);
+  margin: 0;
+}
+
+@media screen and (min-width: 700px) {
+  .hero {
+    padding: 2.5rem 0 0.5rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+    letter-spacing: -0.08rem;
+  }
+}
+
+p.hero-description {
+  -webkit-font-smoothing: antialiased;
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  color: var(--font-color-muted);
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1000px) {
+  p.hero-description {
+    font-size: 1.5rem;
+  }
+}
+
+.hero .sub-title {
+  color: var(--font-color-muted);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.highlight {
+  color: var(--highlight-color);
+}
+
+.hero-wrapper {
+  display: block;
+}
+
+@media screen and (min-width: 700px) {
+  .hero-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
+}
+
+.decoration {
+  width: 60%;
 }
 /* Headings */
 
@@ -389,8 +473,13 @@ h2.home-heading .title {
   }
 }
 
+/* blog page */
+.year {
+  color: var(--year);
+}
+
 a.post {
-  display: grid !important;
+  display: grid;
   grid-template-columns: 1fr 100px;
   gap: 1.5rem;
   padding: 0.2rem 0;
@@ -416,10 +505,19 @@ a.post h3 {
 a.post p {
   display: block;
   margin-left: auto;
-  font-family: var(--font-family-monospace);
+  font-family: var(--font-family-base);
+  letter-spacing: 1px;
   color: var(--post-time-color);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 500;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 700px) {
+  a.post h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
 }
 
 /* posts side card*/

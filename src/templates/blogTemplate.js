@@ -1,7 +1,7 @@
 import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
-import { Sidebar } from "../components/Sidebar";
+import { Sidebar } from "../components/BlogSidebar";
 // import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export default function Template({ data }) {
