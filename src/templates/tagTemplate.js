@@ -4,13 +4,8 @@ import { graphql, Link } from "gatsby";
 
 import "../components/style.css";
 import { PostSideBar } from "../components/PostSideBar";
-import { getYearList } from "../utils/helper";
 
-const BlogPage = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges;
-  const postsByYear = getYearList(posts);
-  const years = Object.keys(postsByYear).reverse();
-
+export default function TagTemplate({ data, pageContext }) {
   return (
     <Layout pageTitle="Blog Posts" showPages={false}>
       <div className="grid">
@@ -18,23 +13,21 @@ const BlogPage = ({ data }) => {
           <header className="hero">
             <h1>Blog Posts</h1>
           </header>
-          {years.map((year) => (
-            <div className="segment">
-              <h2 className="year">{year}</h2>
-              {postsByYear[year].map((post) => (
-                <Link to={post.slug} className="post">
-                  <h3>{post.title} </h3>
-                  <p>{post.date}</p>
-                </Link>
-              ))}
-            </div>
-          ))}
+          <div className="segment">
+            <h2 className="year">2022</h2>
+            {data.allMarkdownRemark.edges.map((edge) => (
+              <Link to={edge.node.frontmatter.slug} className="post">
+                <h3>{edge.node.frontmatter.title} </h3>
+                <p>{edge.node.frontmatter.dateNoYear}</p>
+              </Link>
+            ))}
+          </div>
         </div>
         <PostSideBar />
       </div>
     </Layout>
   );
-};
+}
 
 export const query = graphql`
   query {
@@ -45,7 +38,7 @@ export const query = graphql`
             slug
             title
             year: date(formatString: "YYYY")
-            date: date(formatString: "MMMM DD")
+            dateNoYear: date(formatString: "MMMM DD")
           }
           id
         }
@@ -53,5 +46,3 @@ export const query = graphql`
     }
   }
 `;
-
-export default BlogPage;
