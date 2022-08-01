@@ -7,9 +7,9 @@ function convertData(posts) {
     id: post.node.id,
     slug: post.node.frontmatter.slug,
     date: post.node.frontmatter.date,
-    tags: post.node.frontmatter.tags,
+    tags: post.node.frontmatter.tag,
     title: post.node.frontmatter.title,
-    categories: post.node.frontmatter.categories,
+    categories: post.node.frontmatter.category,
     year: post.node.frontmatter.year,
   }));
 }

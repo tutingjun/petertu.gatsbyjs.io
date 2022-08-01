@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
+import { slugify } from "../utils/helper";
 
 export const PostSideBar = () => {
   const data = useStaticQuery(graphql`
@@ -29,7 +30,7 @@ export const PostSideBar = () => {
             return (
               <Link
                 key={category.name}
-                to="/"
+                to={`/cats/${slugify(category.name)}`}
                 className="category"
                 activeClassName="active"
               >
@@ -48,7 +49,7 @@ export const PostSideBar = () => {
             return (
               <Link
                 key={tag.name}
-                to="/"
+                to={`/tags/${slugify(tag.name)}`}
                 className="tag"
                 activeClassName="active"
               >

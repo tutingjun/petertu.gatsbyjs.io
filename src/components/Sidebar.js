@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import { slugify } from "../utils/helper";
 
 export const Sidebar = ({ tags, category, date, timeToRead }) => {
   // const tagList = tags.split(",")
@@ -16,7 +17,7 @@ export const Sidebar = ({ tags, category, date, timeToRead }) => {
           <div>
             <h2>Category</h2>
             <ul>
-              <Link to="/">
+              <Link to={`/cats/${slugify(category)}`}>
                 <li>{category}</li>
               </Link>
             </ul>
@@ -27,7 +28,12 @@ export const Sidebar = ({ tags, category, date, timeToRead }) => {
         <div className="tags">
           {tags.map((tag) => {
             return (
-              <Link key={tag} to="/" className="tag" activeClassName="active">
+              <Link
+                key={tag}
+                to={`/tags/${slugify(tag)}`}
+                className="tag"
+                activeClassName="active"
+              >
                 {tag}
               </Link>
             );
