@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-import { slugify } from "../utils/helper";
+import { capitalize, slugify } from "../utils/helper";
 
 export const Sidebar = ({ tags, category, date, timeToRead }) => {
   // const tagList = tags.split(",")

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
-import { slugify } from "../utils/helper";
+import { capitalize, slugify } from "../utils/helper";
 
 export const PostSideBar = () => {
   const data = useStaticQuery(graphql`
@@ -34,7 +34,7 @@ export const PostSideBar = () => {
                 className="category"
                 activeClassName="active"
               >
-                <div className="name">{category.name}</div>
+                <div className="name">{capitalize(category.name)}</div>
                 <div className="count">{category.totalCount}</div>
               </Link>
             );

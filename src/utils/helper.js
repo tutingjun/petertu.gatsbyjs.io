@@ -2,6 +2,10 @@ export function slugify(string) {
   return string.toLowerCase().replace(" ", "-");
 }
 
+export function capitalize(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 function convertData(posts) {
   return posts.map((post) => ({
     id: post.node.id,

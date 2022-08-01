@@ -4,7 +4,7 @@ import { graphql, Link } from "gatsby";
 
 import "../components/style.css";
 import { PostSideBar } from "../components/PostSideBar";
-import { getYearList } from "../utils/helper";
+import { capitalize, getYearList } from "../utils/helper";
 
 export default function PostsTemplate({ data, pageContext }) {
   const { key, isTagPage } = pageContext;
@@ -33,7 +33,7 @@ export default function PostsTemplate({ data, pageContext }) {
               <span className="highlight">{totalCount}</span>
               {message}
             </div>
-            <h1>{key}</h1>
+            {isTagPage ? <h1>{key}</h1> : <h1>{capitalize(key)}</h1>}
           </header>
           {years.map((year) => (
             <div className="segment">
