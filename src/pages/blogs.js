@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import { graphql, Link } from "gatsby";
 
 import "../components/style.css";
+import { PostSideBar } from "../components/PostSideBar";
 
 const BlogPage = ({ data }) => {
   return (
@@ -22,6 +23,7 @@ const BlogPage = ({ data }) => {
             ))}
           </div>
         </div>
+        <PostSideBar />
       </div>
     </Layout>
   );

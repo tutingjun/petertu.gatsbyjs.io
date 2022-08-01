@@ -587,3 +587,44 @@ a.tag.active {
   border-color: var(--highlight-color);
   font-weight: 600;
 }
+
+/* post side bar */
+.list a {
+  background-color: transparent;
+  color: var(--font-color-base);
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.1rem 0.3rem;
+  margin: 0 -0.3rem;
+  border-radius: var(--border-radius);
+}
+
+.list a:hover {
+  background: var(--highlight-color);
+  color: white;
+  text-decoration: none;
+}
+
+a.category {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+a.category.active {
+  background: var(--highlight-color);
+  color: white;
+}
+
+a.category:hover .count,
+a.category.active .count {
+  color: white;
+}
+
+.category .count {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--font-color-muted);
+  font-family: var(--font-family-monospace);
+}

@@ -4,8 +4,8 @@ date: "2021-07-23"
 hero_image: "./k-mitch-hodge-NhphfdnEEL8-unsplash.jpg"
 hero_image_alt: "Photo from unsplash"
 slug: "/blog/my-first-post"
-tag: ["das", "adsa", "new taggg"]
-category: "random"
+tag: ["update", "life", "new taggg"]
+category: "first"
 ---
 
 Finally got my blog pages to work. I think the layout now is pretty desirable. And I have fricking Grammarly installed so I can have a decent grammar check for each post I write, which is pretty coool. But I need to support code block and backquote. Maybe I won't use all these features... Who knows lol
