@@ -157,7 +157,7 @@ main {
 
 @media screen and (min-width: 700px) {
   .hero.index {
-    padding: 3.5rem 0 2rem;
+    padding: 1.5rem 0 2rem;
   }
 }
 
@@ -208,6 +208,7 @@ p.hero-description {
 
 .hero-wrapper {
   display: block;
+  padding-top: 3rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -220,7 +221,32 @@ p.hero-description {
 
 .decoration {
   width: 60%;
+  padding-top: var(--border-radius);
 }
+
+@media screen and (max-width: 700px) {
+  .decoration div {
+    display: none;
+  }
+  .decoration {
+    border-bottom: 4px inset var(--border-color);
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .hero-wrapper p {
+    margin-bottom: 10px;
+  }
+  .hero-wrapper {
+    padding-top: 1rem;
+  }
+}
+
+.gatsby-image-wrapper {
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 6px 5px 4px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 6px 5px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
 /* Headings */
 
 h1,
@@ -305,6 +331,38 @@ h2.home-heading .title {
   h2.home-heading .title {
     font-size: 1.6rem;
   }
+}
+
+/* Buttons */
+
+button,
+a.button {
+  -webkit-appearance: none;
+  background: var(--button-background-color);
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  font-family: var(--font-family-base);
+  line-height: 1;
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 500;
+  color: var(--font-color-base);
+  border: 1px solid var(--border-color);
+  gap: 0.25rem;
+}
+
+button img,
+a.button img {
+  max-height: 20px;
+  margin-right: 0.25rem;
+}
+
+button:hover,
+a.button:hover {
+  color: var(--font-color-bright);
+  border-color: var(--border-color-hover);
 }
 
 /* Containers */
@@ -627,4 +685,40 @@ a.category.active .count {
   font-size: 0.8rem;
   color: var(--font-color-muted);
   font-family: var(--font-family-monospace);
+}
+
+/* Helpers */
+
+.width.small {
+  max-width: var(--content-width--small);
+}
+.width.medium {
+  max-width: var(--content-width--medium);
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-end {
+  align-items: flex-end;
+}
+
+.desktop-only {
+  display: none !important;
+}
+
+@media screen and (min-width: 700px) {
+  .desktop-only {
+    display: flex !important;
+  }
 }
