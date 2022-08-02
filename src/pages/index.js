@@ -2,10 +2,12 @@
 import * as React from "react";
 import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
+import { slugify } from "../utils/helper";
 
 // Step 2: Define your component
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+  const recent = data.allMarkdownRemark.edges;
   return (
     <Layout pageTitle="Home Page" showPages={false}>
       <div className="hero-wrapper">
@@ -35,12 +37,31 @@ const IndexPage = () => {
             View all
           </a>
         </h2>
+        <div className="post-preview">
+          {recent.map((edge) => {
+            return (
+              <div className="anchored card">
+                <p>{edge.node.frontmatter.date}</p>
+                <Link to={edge.node.frontmatter.slug} className="card-header">
+                  {edge.node.frontmatter.title}
+                </Link>
+                <div className="anchored categories">
+                  <Link
+                    className="cat"
+                    to={`/cats/${slugify(edge.node.frontmatter.category)}`}
+                    key={slugify(edge.node.frontmatter.category)}
+                  >
+                    {edge.node.frontmatter.category}
+                  </Link>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </section>
     </Layout>
   );
 };
-
-export default IndexPage;
 
 export const query = graphql`
   query {
@@ -62,3 +83,5 @@ export const query = graphql`
     }
   }
 `;
+
+export default IndexPage;
