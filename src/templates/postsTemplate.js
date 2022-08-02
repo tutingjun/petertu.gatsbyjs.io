@@ -47,7 +47,7 @@ export default function PostsTemplate({ data, pageContext }) {
             </div>
           ))}
         </div>
-        <PostSideBar />
+        <PostSideBar selectedElement={key} isTagPage={isTagPage} />
       </div>
     </Layout>
   );
