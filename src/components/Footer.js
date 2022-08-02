@@ -36,8 +36,8 @@ export const Footer = () => {
             <StaticImage
               src="../assets/email.png"
               alt="email to:"
-              width={28}
-              height={28}
+              width={24}
+              height={24}
             />
             &nbsp;tut@carleton
           </a>
@@ -51,7 +51,6 @@ export const Footer = () => {
               rel="noopener noreferrer"
               key={link.url}
             >
-              <span>{link.label}</span>
               <img src={link.icon} alt={link.label} className="footer-image" />
             </a>
           ))}
