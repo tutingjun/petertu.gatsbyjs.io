@@ -3,7 +3,8 @@ import * as React from "react";
 import Layout from "../components/layout";
 import { StaticImage } from "gatsby-plugin-image";
 import { graphql, Link } from "gatsby";
-import { slugify } from "../utils/helper";
+import { capitalize, slugify } from "../utils/helper";
+import { projectLists } from "../data/projectList";
 
 // Step 2: Define your component
 const IndexPage = ({ data }) => {
@@ -51,8 +52,38 @@ const IndexPage = ({ data }) => {
                     to={`/cats/${slugify(edge.node.frontmatter.category)}`}
                     key={slugify(edge.node.frontmatter.category)}
                   >
-                    {edge.node.frontmatter.category}
+                    {capitalize(edge.node.frontmatter.category)}
                   </Link>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+
+      <section className="segment">
+        <h2 className="home-heading">
+          <div className="title">My Projects</div>
+        </h2>
+        <div className="highlight-preview">
+          {projectLists.map((project) => {
+            return (
+              <div className="muted card flex">
+                <StaticImage
+                  layout="fixed"
+                  width={60}
+                  height={60}
+                  src="../images/icon.png"
+                  alt="test Images"
+                />
+                <div>
+                  <p>{project.date}</p>
+                  <Link to={project.slug} className="card-header">
+                    {project.name}
+                  </Link>
+                  <a className="button small" href={project.writeup}>
+                    Article
+                  </a>
                 </div>
               </div>
             );

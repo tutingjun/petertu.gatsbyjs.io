@@ -6,8 +6,8 @@ import info from "../assets/info.png";
 import note from "../assets/notebook.png";
 
 const mainNavItems = [
-  { url: "/about", icon: info, label: "About me" },
   { url: "/blogs", icon: note, label: "Writing" },
+  { url: "/about", icon: info, label: "About me" },
 ];
 
 export const Navigation = ({ title }) => {

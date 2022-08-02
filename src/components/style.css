@@ -516,6 +516,11 @@ a.button:hover {
   border-color: var(--border-color-hover);
 }
 
+button.small,
+a.button.small {
+  padding: 0.45rem 0.5rem;
+  font-size: 0.9rem;
+}
 /* Containers */
 
 .container {
@@ -910,11 +915,46 @@ a.category.active .count {
 }
 
 .desktop-only {
-  display: none !important;
+  display: flex !important;
+  padding-right: 0.8rem !important;
 }
 
-@media screen and (min-width: 700px) {
-  .desktop-only {
-    display: flex !important;
-  }
+/* Footer */
+
+.footer {
+  padding: 3rem 0;
+  font-family: var(--post-font-family);
+}
+
+.footer section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.footer-image {
+  display: inline-block;
+  height: 24px;
+  width: auto;
+}
+
+.footer nav {
+  display: flex;
+  gap: 0.25rem;
+  margin: 0 1rem;
+}
+
+.footer a,
+.footer span {
+  display: flex;
+  align-items: center;
+  color: var(--font-color-base);
+  font-size: 0.9rem;
+  line-height: 1.2;
+  padding: 0 0.5rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
