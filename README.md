@@ -2,7 +2,7 @@
 
 ### To DO
 
-- [ ] Change Frontpage
+- [x] Change Frontpage
 - [ ] Add support for the code block
 - [ ] Add support for backquote
 - [ ] Figure out the display of video and images slide show

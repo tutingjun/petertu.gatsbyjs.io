@@ -50,7 +50,7 @@
   --button-background-color: white;
   --marker: #da66b7;
   --link: var(--indigo);
-  --link-hover-color: var(--indigo-muted);
+  --link-hover-color: var(--purple);
   --navbar: var(--gray-9);
   --year: var(--green);
   --star: var(--yellow);
@@ -84,7 +84,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
 
   line-height: 2;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: normal;
   font-kerning: normal;
 }
@@ -396,6 +396,11 @@ p.hero-description {
   .card {
     padding: 1.5rem;
   }
+}
+
+.index-images {
+  height: 65px;
+  width: auto;
 }
 
 /* Headings */
@@ -743,6 +748,10 @@ a.post p {
   margin: 2rem 0;
 }
 
+.position-fix {
+  position: fixed;
+}
+
 .post-sidebar h2 {
   color: var(--font-color-muted);
   font-size: 0.8rem;
@@ -957,4 +966,27 @@ a.category.active .count {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+/* Markdown */
+
+/* Blockquote */
+
+blockquote {
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--indigo-light);
+  margin-left: 0;
+  padding: 1rem;
+  background: var(--blockquote-background);
+  border-radius: var(--border-radius);
+}
+
+blockquote p {
+  font-size: 1rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+blockquote p:last-of-type {
+  margin: 0;
 }

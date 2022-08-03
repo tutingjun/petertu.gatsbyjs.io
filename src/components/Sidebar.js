@@ -6,7 +6,7 @@ export const Sidebar = ({ tags, category, date, timeToRead }) => {
   // const tagList = tags.split(",")
   return (
     <aside className="post-sidebar">
-      <div className="post-sidebar-card ">
+      <div className="post-sidebar-card position-fix">
         <h2>Details</h2>
         <ul>
           <li>Published: {date}</li>

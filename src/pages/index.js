@@ -69,12 +69,10 @@ const IndexPage = ({ data }) => {
           {projectLists.map((project) => {
             return (
               <div className="muted card flex">
-                <StaticImage
-                  layout="fixed"
-                  width={60}
-                  height={60}
-                  src="../images/icon.png"
+                <img
+                  src={project.image}
                   alt="test Images"
+                  className="index-images"
                 />
                 <div>
                   <p>{project.date}</p>
