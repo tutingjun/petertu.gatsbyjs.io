@@ -1,6 +1,6 @@
 import icon from "../images/icon.png";
 import cyberrun from "../images/cyberrun.png";
-
+import carlclub from "../images/Carlclub_logo.png";
 export const projectLists = [
   {
     name: "My personal website",
@@ -24,8 +24,8 @@ export const projectLists = [
     slug: "https://hhfinals.dgah.sites.carleton.edu/carlclubs/",
     tagline:
       "An interactive website showing the history and current state of clubs at Carleton College.",
-    writeup: "/",
-    image: icon,
+    writeup: "/blog/carlclub",
+    image: carlclub,
   },
   {
     name: "Love me some ice cream",

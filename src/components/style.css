@@ -38,6 +38,9 @@
   --indigo-light: #969bf6;
   --indigo-muted: #f1f2fd;
 
+  --red: #d31919;
+  --red-light: #f9b2b2;
+
   /* Font color */
   --font-color-base: var(--gray-7);
   --font-color-muted: var(--gray-6);
@@ -49,7 +52,7 @@
   --card-background-color: var(--gray-05);
   --button-background-color: white;
   --marker: #da66b7;
-  --link: var(--indigo);
+  --link: #047bb7;
   --link-hover-color: var(--purple);
   --navbar: var(--gray-9);
   --year: var(--green);
@@ -334,7 +337,8 @@ p.hero-description {
 
 @media screen and (min-width: 700px) {
   .card.anchored {
-    padding-bottom: 3.5rem;
+    position: relative;
+    padding-bottom: 5.5rem;
   }
 
   .card.anchored.large {
@@ -673,6 +677,21 @@ a.button.small {
   text-decoration: none;
 }
 
+.post-content .figure-caption {
+  margin-top: -1.7em;
+  text-align: center;
+  color: var(--font-color-muted);
+  font-size: 1em;
+}
+
+.post-content code {
+  background-color: var(--inline-code-background-color);
+  border-radius: 4px;
+  color: var(--font-color-base);
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.2rem 0.3rem;
+}
 .post-header {
   padding: 2rem 0 0.5rem;
 }
@@ -981,6 +1000,13 @@ blockquote {
   border-radius: var(--border-radius);
 }
 
+blockquote.origin {
+  border: 0px solid var(--gray-5);
+  background: var(--gray-0);
+  margin-bottom: 1rem;
+  margin-top: -1.5rem;
+}
+
 blockquote p {
   font-size: 1rem;
   line-height: 1.7;
@@ -989,4 +1015,21 @@ blockquote p {
 
 blockquote p:last-of-type {
   margin: 0;
+}
+
+pre {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
 }
