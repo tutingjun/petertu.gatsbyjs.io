@@ -612,6 +612,31 @@ a.button.small {
   margin: 0 0.5rem;
 }
 
+@media screen and (max-width: 400px) {
+  .navigation a.item {
+    font-size: 1rem !important;
+  }
+  /* .navigation a.brand {
+    font-size: 1.2rem !important;
+  } */
+  .navigation nav {
+    gap: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .navigation a.item {
+    font-size: 0.8rem;
+  }
+  .navigation a.brand {
+    font-size: 1rem !important;
+    margin-right: 0.8rem !important;
+  }
+  .navigation nav {
+    gap: 0.5rem;
+  }
+}
+
 .navigation a.brand {
   display: flex;
   align-items: center;
@@ -767,8 +792,10 @@ a.post p {
   margin: 2rem 0;
 }
 
-.position-fix {
-  position: fixed;
+@media screen and (min-width: 900px) {
+  .position-fix {
+    position: fixed;
+  }
 }
 
 .post-sidebar h2 {
@@ -1032,4 +1059,11 @@ pre {
   padding: 1em 1.5em;
   display: block;
   word-wrap: break-word;
+}
+
+@media screen and (max-width: 700px) {
+  iframe {
+    width: 300px;
+    height: 400px;
+  }
 }
