@@ -6,7 +6,7 @@ tag: ["DH Project Analysis", "DGAH Class Blog Post", "Network Analysis"]
 category: "Digital Humanities"
 ---
 
-<blockquote class = "origin"> <p>This post is orginally post on <a herf="https://hh2022.amason.sites.carleton.edu/week-4-spatial-humanities/six-degrees-of-francis-bacon-2/">Wordpres</a></p></blockquote>
+<blockquote class = "origin"> <p>This post is orginally post on <a href="https://hh2022.amason.sites.carleton.edu/week-4-spatial-humanities/six-degrees-of-francis-bacon-2/">Wordpres</a></p></blockquote>
 
 ![Screenshot of the website](./six-degrees-of-francis-bacon.png)
 

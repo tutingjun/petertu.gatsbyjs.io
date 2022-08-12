@@ -6,7 +6,7 @@ tag: ["Project Analysis", "DGAH Class Blog Post"]
 category: "Digital Humanities"
 ---
 
-<blockquote class = "origin"> <p>This post is orginally post on <a herf="https://hh2022.amason.sites.carleton.edu/week-2/analysis-of-the-rhythm-of-food/">Wordpres</a></p></blockquote>
+<blockquote class = "origin"> <p>This post is orginally post on <a href="https://hh2022.amason.sites.carleton.edu/week-2/analysis-of-the-rhythm-of-food/">Wordpres</a></p></blockquote>
 
 ![Screenshot of the website](./rhythm_of_food2.png)
 
