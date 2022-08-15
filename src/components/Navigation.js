@@ -7,7 +7,7 @@ import note from "../assets/notebook.png";
 
 const mainNavItems = [
   { url: "/blogs", icon: note, label: "Writing" },
-  { url: "/about", icon: info, label: "About me" },
+  // { url: "/about", icon: info, label: "About me" },
 ];
 
 export const Navigation = ({ title }) => {

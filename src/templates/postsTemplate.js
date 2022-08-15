@@ -66,7 +66,7 @@ export const query = graphql`
             slug
             title
             year: date(formatString: "YYYY")
-            date: date(formatString: "MMMM DD")
+            date: date(formatString: "MMM DD")
             category
             tag
           }
