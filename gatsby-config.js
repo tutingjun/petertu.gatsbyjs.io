@@ -1,6 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Peter Tu`,
+    author: {
+      name: "Peter Tu",
+      name: "Tingjun Tu",
+    },
+    description:
+      "This is my personal website developed by Peter Tu at Carleton College",
   },
   plugins: [
     "gatsby-plugin-image",
