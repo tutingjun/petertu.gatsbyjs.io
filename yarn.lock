@@ -6030,10 +6030,10 @@
     "yoga-layout-prebuilt" "^1.10.0"
     "yurnalist" "^2.1.0"
 
-"gatsby-core-utils@^3.19.0", "gatsby-core-utils@^3.20.0":
-  "integrity" "sha512-D3DIulUFoPvexwsGYFkfESL1Dd3qsxBfj8OBi8vsd6BuXrA6MbLtX3j5+BLVxfKkN2wF7XN6b3/DH+JGNuhh2A=="
-  "resolved" "https://registry.npmjs.org/gatsby-core-utils/-/gatsby-core-utils-3.20.0.tgz"
-  "version" "3.20.0"
+"gatsby-core-utils@^3.19.0", "gatsby-core-utils@^3.20.0", "gatsby-core-utils@^3.21.0":
+  "integrity" "sha512-pCDa9EGU8niRJQVv7ow3ijzmG0PegZaBc5Yt6z4enc4m7Dl5ZT6Edkcw9p8q/FhGiZUkzQhWaRDxUvtaoPwAOQ=="
+  "resolved" "https://registry.npmjs.org/gatsby-core-utils/-/gatsby-core-utils-3.21.0.tgz"
+  "version" "3.21.0"
   dependencies:
     "@babel/runtime" "^7.15.4"
     "ci-info" "2.0.0"
@@ -6285,6 +6285,15 @@
     "unist-util-select" "^3.0.4"
     "unist-util-visit-parents" "^3.1.1"
 
+"gatsby-remark-prismjs@^6.21.0":
+  "integrity" "sha512-dmtJZmnTzziGT0ENl7cPUgch3yqkQzdrzU26nOi2spR6jsUNMyDwWZcyJEbNOAbW6792bWLr+Ay9godI62Inyw=="
+  "resolved" "https://registry.npmjs.org/gatsby-remark-prismjs/-/gatsby-remark-prismjs-6.21.0.tgz"
+  "version" "6.21.0"
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "parse-numeric-range" "^1.2.0"
+    "unist-util-visit" "^2.0.3"
+
 "gatsby-remark-reading-time@^1.1.0":
   "integrity" "sha512-J2I/Aerw6iEcYUs9MH5r7Ky5PIe7Aiq7+M3sDWdRa0ddWYIOZGxPq8U1xYsIBwQjVtPovk8N4aMTau9kjQQLQA=="
   "resolved" "https://registry.npmjs.org/gatsby-remark-reading-time/-/gatsby-remark-reading-time-1.1.0.tgz"
@@ -6342,13 +6351,13 @@
     "lodash" "^4.17.21"
     "node-fetch" "^2.6.7"
 
-"gatsby-transformer-remark@^5.19.0":
-  "integrity" "sha512-nOuEqrRMhfAaLrC9rQs9SjIEAyW05oxhYSdlUgXkMCLdTcaaibk2dWgHXCWMsE6B7tQd2UsPCZNyINoU+jto0g=="
-  "resolved" "https://registry.npmjs.org/gatsby-transformer-remark/-/gatsby-transformer-remark-5.19.0.tgz"
-  "version" "5.19.0"
+"gatsby-transformer-remark@^5.21.0":
+  "integrity" "sha512-2Uyhdx2PanX6XfB8euroMJJ5yJRobre/14wQc5O3vy6zYEub5ph+BTpWIHgD15Od3XHV/iOvKHCCADhhrjp6Kw=="
+  "resolved" "https://registry.npmjs.org/gatsby-transformer-remark/-/gatsby-transformer-remark-5.21.0.tgz"
+  "version" "5.21.0"
   dependencies:
     "@babel/runtime" "^7.15.4"
-    "gatsby-core-utils" "^3.19.0"
+    "gatsby-core-utils" "^3.21.0"
     "gray-matter" "^4.0.3"
     "hast-util-raw" "^6.0.2"
     "hast-util-to-html" "^7.1.3"
@@ -9383,6 +9392,11 @@
     "unist-util-modify-children" "^2.0.0"
     "unist-util-visit-children" "^1.0.0"
 
+"parse-numeric-range@^1.2.0":
+  "integrity" "sha512-twN+njEipszzlMJd4ONUYgSfZPDxgHhT9Ahed5uTigpQn90FggW4SA/AIPq/6a149fTbE9qBEcSwE3FAEp6wQQ=="
+  "resolved" "https://registry.npmjs.org/parse-numeric-range/-/parse-numeric-range-1.3.0.tgz"
+  "version" "1.3.0"
+
 "parse-path@^4.0.0":
   "integrity" "sha512-Z2lWUis7jlmXC1jeOG9giRO2+FsuyNipeQ43HAjqAZjwSe3SEf+q/84FGPHoso3kyntbxa4c4i77t3m6fGf8cw=="
   "resolved" "https://registry.npmjs.org/parse-path/-/parse-path-4.0.4.tgz"
@@ -9904,6 +9918,11 @@
   dependencies:
     "lodash" "^4.17.20"
     "renderkid" "^2.0.4"
+
+"prismjs@^1.28.0":
+  "integrity" "sha512-8aaXdYvl1F7iC7Xm1spqSaY/OJBpYW3v+KJ+F17iYxvdc8sfjW194COK5wVhMZX45tGteiBQgdvD/nhxcRwylw=="
+  "resolved" "https://registry.npmjs.org/prismjs/-/prismjs-1.28.0.tgz"
+  "version" "1.28.0"
 
 "probe-image-size@^7.2.3":
   "integrity" "sha512-HubhG4Rb2UH8YtV4ba0Vp5bQ7L78RTONYu/ujmCu5nBI8wGv24s4E9xSKBi0N1MowRpxk76pFCpJtW0KPzOK0w=="

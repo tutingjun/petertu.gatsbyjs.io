@@ -64,6 +64,7 @@
   --blockquote-background: var(--indigo-muted);
   --file-background: #e9ecef;
   --inline-code-background-color: rgba(0, 0, 0, 0.05);
+  --code-background-color: #f8f9fa;
 
   /* Borders */
   --border-color: var(--gray-3);
@@ -709,8 +710,8 @@ a.button.small {
   font-size: 1em;
 }
 
-.post-content code {
-  background-color: var(--inline-code-background-color);
+.post-content p code {
+  background-color: var(--inline-code-background-color) !important;
   border-radius: 4px;
   color: var(--font-color-base);
   font-size: 0.9rem;
@@ -1044,26 +1045,55 @@ blockquote p:last-of-type {
   margin: 0;
 }
 
-pre {
-  background: #f4f4f4;
-  border: 1px solid #ddd;
-  border-left: 3px solid #f36d33;
-  color: #666;
-  page-break-inside: avoid;
-  font-family: monospace;
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 1.6em;
-  max-width: 100%;
-  overflow: auto;
-  padding: 1em 1.5em;
-  display: block;
-  word-wrap: break-word;
-}
-
 @media screen and (max-width: 700px) {
   iframe {
     width: 300px;
     height: 400px;
   }
+}
+
+.gatsby-highlight-code-line {
+  background-color: #feb;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #f99;
+}
+
+/**
+ * Add back the container background-color, border-radius, padding, margin
+ * and overflow that we removed from <pre>.
+ */
+.gatsby-highlight {
+  background-color: var(--code-background-color);
+  border-radius: 0.3em;
+  margin: 0.5em 0;
+  padding: 1em;
+  overflow: auto;
+}
+
+/**
+ * Remove the default PrismJS theme background-color, border-radius, margin,
+ * padding and overflow.
+ * 1. Make the element just wide enough to fit its content.
+ * 2. Always fill the visible space in .gatsby-highlight.
+ * 3. Adjust the position of the line numbers
+ */
+.gatsby-highlight pre[class*="language-"] {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  overflow: initial;
+  float: left; /* 1 */
+  min-width: 100%; /* 2 */
+  font-size: 0.9rem;
+}
+
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+  background: hsla(0, 0%, 59%, 0.3) !important;
 }
