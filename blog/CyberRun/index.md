@@ -3,7 +3,7 @@ title: "CyberRun"
 date: "2022-03-19"
 slug: "/blog/CyberRun"
 tag: ["Game Design", "Game Maker Studio"]
-category: "Projects"
+category: "Project"
 ---
 
 ![Screenshot of the game](./cyberrun.png)

@@ -246,9 +246,13 @@ p.hero-description {
 }
 
 .decoration .gatsby-image-wrapper {
-  border-radius: 0.5rem;
   -webkit-box-shadow: 6px 5px 4px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 6px 5px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+
+.gatsby-image-wrapper img {
+  border-radius: 10px;
 }
 
 /* Preview */
@@ -442,11 +446,11 @@ h2 code {
 }
 
 h3 {
-  font-size: 1.5rem;
-  font-weight: 900;
+  font-size: 1.3rem;
+  font-weight: 700;
   margin-bottom: 1rem;
   color: var(--font-color-heading);
-  font-family: var(--font-family-heading);
+  font-family: var(--font-family-base);
 }
 
 h3 code {

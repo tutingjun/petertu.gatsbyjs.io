@@ -76,9 +76,14 @@ const IndexPage = ({ data }) => {
                 />
                 <div>
                   <p>{project.date}</p>
-                  <Link to={project.slug} className="card-header">
+                  <a
+                    href={project.slug}
+                    className="card-header"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {project.name}
-                  </Link>
+                  </a>
                   <a className="button small" href={project.writeup}>
                     Article
                   </a>

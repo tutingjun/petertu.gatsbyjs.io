@@ -1,6 +1,7 @@
 import icon from "../images/icon.png";
 import cyberrun from "../images/cyberrun.png";
 import carlclub from "../images/Carlclub_logo.png";
+import icecream from "../images/icecream_logo.png";
 export const projectLists = [
   {
     name: "My personal website",
@@ -32,8 +33,8 @@ export const projectLists = [
     date: "2021",
     slug: "https://ice-cream-explorer.herokuapp.com",
     tagline: "An ice cream searching website using Flask",
-    writeup: "/",
-    image: icon,
+    writeup: "/blog/love-me-some-ice-cream",
+    image: icecream,
   },
   {
     name: "COSIGN",
