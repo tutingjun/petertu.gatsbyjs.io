@@ -12,7 +12,7 @@ const BlogPage = ({ data }) => {
   const years = Object.keys(postsByYear).reverse();
 
   return (
-    <Layout pageTitle="Blog Posts" showPages={false}>
+    <Layout pageTitle="Blog Posts" slug="./blogs">
       <div className="grid">
         <div className="article-content">
           <header className="hero">

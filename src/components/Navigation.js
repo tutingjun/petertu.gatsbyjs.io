@@ -10,7 +10,7 @@ const mainNavItems = [
   // { url: "/about", icon: info, label: "About me" },
 ];
 
-export const Navigation = ({ title }) => {
+export const Navigation = ({ slug }) => {
   return (
     <section className="navigation">
       <div className="container">
@@ -25,7 +25,7 @@ export const Navigation = ({ title }) => {
                 to={item.url}
                 key={item.label}
                 activeClassName="active"
-                className="item"
+                className={slug === item.url ? "item active" : "item"}
               >
                 <span>{item.label}</span>
               </Link>

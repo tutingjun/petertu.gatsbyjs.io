@@ -1,5 +1,5 @@
 ---
-title: "Love me some Ice cream"
+title: "Love me some ice cream"
 date: "2021-07-01"
 slug: "/blog/love-me-some-ice-cream"
 tag: ["Web design", "Flask"]

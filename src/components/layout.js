@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import { Navigation } from "./Navigation";
 import { Footer } from "./Footer";
 
-const Layout = ({ pageTitle, children, showPages }) => {
+const Layout = ({ pageTitle, children, slug }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -19,12 +19,9 @@ const Layout = ({ pageTitle, children, showPages }) => {
       <title>
         {pageTitle} | {data.site.siteMetadata.title}
       </title>
-      <Navigation />
+      <Navigation slug={slug} />
       <main>
-        <div className="container">
-          {showPages && <h1 className="heading">{pageTitle}</h1>}
-          {children}
-        </div>
+        <div className="container">{children}</div>
       </main>
       <Footer />
     </div>

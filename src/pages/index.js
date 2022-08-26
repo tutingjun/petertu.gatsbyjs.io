@@ -10,11 +10,11 @@ import { projectLists } from "../data/projectList";
 const IndexPage = ({ data }) => {
   const recent = data.allMarkdownRemark.edges;
   return (
-    <Layout pageTitle="Home Page" showPages={false}>
+    <Layout pageTitle="Home Page" slug="./">
       <div className="hero-wrapper">
         <header className="hero index">
           <h1>Hi, I'm Peter</h1>
-          <p className="hero-description small width">
+          <p className="hero-description">
             I am a junior computer science major at Carleton College, aiming to
             become a full stack developer. I enjoy movies, video games, and
             photography.
@@ -23,12 +23,12 @@ const IndexPage = ({ data }) => {
             This is my space to record what I love and enjoy.
           </p>
         </header>
-        <div className="decoration">
+        {/* <div className="decoration">
           <StaticImage
             alt="Random images from unsplash"
             src="https://images.unsplash.com/photo-1518893494013-481c1d8ed3fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
           />
-        </div>
+        </div> */}
       </div>
 
       <section className="segment">
