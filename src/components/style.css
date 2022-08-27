@@ -47,6 +47,7 @@
   --font-color-heading: #556273;
   --font-color-bright: var(--gray-9);
   --font-color-hero-heading: var(--gray-0);
+  --code-font-color: #232529;
   /* Elements */
   --background-color: white;
   --card-background-color: var(--gray-05);
@@ -821,6 +822,11 @@ a.post p {
 
 .post-sidebar .tags {
   gap: 0.3rem;
+  max-width: fit-content;
+}
+
+.post-sidebar .button {
+  margin-top: 1.5rem;
 }
 
 .post-sidebar a:hover {
@@ -1093,6 +1099,11 @@ blockquote p:last-of-type {
   font-size: 0.9rem;
 }
 
+pre[class*="language-"],
+code[class*="language-"] {
+  color: var(--code-font-color) !important;
+}
+
 pre[class*="language-"]::selection,
 pre[class*="language-"] ::selection,
 code[class*="language-"]::selection,
@@ -1100,56 +1111,9 @@ code[class*="language-"] ::selection {
   background: hsla(0, 0%, 59%, 0.3) !important;
 }
 
-/* Possible change of color scheme */
-/* Color Theme Swatches in Hex */
-.San-Marino-1-hex {
-  color: #556273;
-}
-.San-Marino-2-hex {
-  color: #69788c;
-}
-.San-Marino-3-hex {
-  color: #8a99a6;
-}
-.San-Marino-4-hex {
-  color: #f2f2f2;
-}
-.San-Marino-5-hex {
-  color: #d9d9d9;
-}
-
-/* Color Theme Swatches in RGBA */
-.San-Marino-1-rgba {
-  color: rgba(84, 97, 114, 1);
-}
-.San-Marino-2-rgba {
-  color: rgba(105, 120, 140, 1);
-}
-.San-Marino-3-rgba {
-  color: rgba(137, 152, 165, 1);
-}
-.San-Marino-4-rgba {
-  color: rgba(242, 242, 242, 1);
-}
-.San-Marino-5-rgba {
-  color: rgba(216, 216, 216, 1);
-}
-
-/* Color Theme Swatches in HSLA */
-.San-Marino-1-hsla {
-  color: hsla(213, 14, 39, 1);
-}
-.San-Marino-2-hsla {
-  color: hsla(213, 14, 48, 1);
-}
-.San-Marino-3-hsla {
-  color: hsla(208, 13, 59, 1);
-}
-.San-Marino-4-hsla {
-  color: hsla(0, 0, 95, 1);
-}
-.San-Marino-5-hsla {
-  color: hsla(0, 0, 85, 1);
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background-color: var(--inline-code-background-color) !important;
 }
 
 .typewriter {
