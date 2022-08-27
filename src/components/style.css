@@ -741,7 +741,7 @@ a.button.small {
 
 /* blog page */
 .year {
-  color: #e7be16;
+  color: var(--year);
 }
 
 a.post {
@@ -1150,4 +1150,42 @@ code[class*="language-"] ::selection {
 }
 .San-Marino-5-hsla {
   color: hsla(0, 0, 85, 1);
+}
+
+.typewriter {
+  color: #047bb7;
+}
+
+.subheading {
+  display: flex;
+  font-size: 3.5rem;
+  letter-spacing: -0.08rem;
+  line-height: 1.1;
+  font-weight: 500;
+  margin-top: 0.3em;
+}
+
+@media screen and (max-width: 700px) {
+  .subheading {
+    font-size: 2rem;
+    font-weight: 550;
+  }
+}
+
+.typewriter-text-0 {
+  color: var(--green);
+}
+
+.typewriter-text-1 {
+  color: #fac668;
+}
+.typewriter-text-2 {
+  color: #e590a5;
+}
+.typewriter-text-3 {
+  color: rgb(185, 96, 61);
+}
+
+.typewriter-text-4 {
+  color: #38b6f1;
 }

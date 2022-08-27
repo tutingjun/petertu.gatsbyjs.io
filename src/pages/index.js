@@ -5,6 +5,30 @@ import { StaticImage } from "gatsby-plugin-image";
 import { graphql, Link } from "gatsby";
 import { capitalize, slugify } from "../utils/helper";
 import { projectLists } from "../data/projectList";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+
+const TypewriterHook = () => {
+  const wordArray = [
+    "a programmer",
+    "a photographer",
+    "an amateur director",
+    "a movie lover",
+    "a video game enthusiast",
+  ];
+  const { text, count } = useTypewriter({
+    words: wordArray,
+    loop: true,
+    autoStart: true,
+    typeSpeed: 100,
+  });
+
+  return (
+    <div className={`typewriter-text-${count % wordArray.length}`}>
+      <span>{text}</span>
+      <Cursor />
+    </div>
+  );
+};
 
 // Step 2: Define your component
 const IndexPage = ({ data }) => {
@@ -13,7 +37,12 @@ const IndexPage = ({ data }) => {
     <Layout pageTitle="Home Page" slug="./">
       <div className="hero-wrapper">
         <header className="hero index">
-          <h1>Hi, I'm Peter</h1>
+          <h1>Hi, I'm Peter Tu</h1>
+          <div className="subheading">
+            <div className="typewriter">
+              <TypewriterHook />
+            </div>
+          </div>
           <p className="hero-description">
             I am a junior computer science major at Carleton College, aiming to
             become a full stack developer. I enjoy movies, video games, and

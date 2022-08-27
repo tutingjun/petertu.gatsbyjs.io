@@ -76,5 +76,6 @@ module.exports = {
         ],
       },
     },
+    "react-simple-typewriter",
   ],
 };
