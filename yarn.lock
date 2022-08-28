@@ -2624,7 +2624,7 @@
   "resolved" "https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.2.tgz"
   "version" "0.16.2"
 
-"@types/sharp@^0.30.0":
+"@types/sharp@^0.30.0", "@types/sharp@^0.30.5":
   "integrity" "sha512-EhO29617AIBqxoVtpd1qdBanWpspk/kD2B6qTFRJ31Q23Rdf+DNU1xlHSwtqvwq1vgOqBwq1i38SX+HGCymIQg=="
   "resolved" "https://registry.npmjs.org/@types/sharp/-/sharp-0.30.5.tgz"
   "version" "0.30.5"
@@ -6132,6 +6132,17 @@
     "objectFitPolyfill" "^2.3.5"
     "prop-types" "^15.8.1"
 
+"gatsby-plugin-manifest@^4.21.0":
+  "integrity" "sha512-QzP7J2KKRrpENq5lm85jvLvW/xYCN7bfziaUyfxiip+ztHlF+E8XToxsHZqyLlgZrKoB/cUV6zu7vHpqoYFOQQ=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-manifest/-/gatsby-plugin-manifest-4.21.0.tgz"
+  "version" "4.21.0"
+  dependencies:
+    "@babel/runtime" "^7.15.4"
+    "gatsby-core-utils" "^3.21.0"
+    "gatsby-plugin-utils" "^3.15.0"
+    "semver" "^7.3.7"
+    "sharp" "^0.30.7"
+
 "gatsby-plugin-mdx@^3.19.0":
   "integrity" "sha512-uCn2w2GfW/CDeHEebXBa3ee2xnBbRVyn9gjqFxH3nUtFa4UsxQ13SWyd4Pur48A3VNpsQKQMXGo8JQFzXiqI5w=="
   "resolved" "https://registry.npmjs.org/gatsby-plugin-mdx/-/gatsby-plugin-mdx-3.19.0.tgz"
@@ -6231,17 +6242,17 @@
     "@babel/runtime" "^7.15.4"
     "babel-plugin-remove-graphql-queries" "^4.20.0"
 
-"gatsby-plugin-utils@^3.14.0":
-  "integrity" "sha512-Dj40dEPzkirU28vPNve7QtvPIqFahY8fmQMZH4aZXFI9h5AbMfCgtWGeBBeHvNB2CA8piyPcYrnNOL+oRe/zCg=="
-  "resolved" "https://registry.npmjs.org/gatsby-plugin-utils/-/gatsby-plugin-utils-3.14.0.tgz"
-  "version" "3.14.0"
+"gatsby-plugin-utils@^3.14.0", "gatsby-plugin-utils@^3.15.0":
+  "integrity" "sha512-O4dm4ntakCoQZnnnS4oGihtT48Rrh888fMpcxj0zWu/6/8Uyz8IgagJyJAz0MMdcfhrLIE+X8Rszjk8hINDQhA=="
+  "resolved" "https://registry.npmjs.org/gatsby-plugin-utils/-/gatsby-plugin-utils-3.15.0.tgz"
+  "version" "3.15.0"
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@gatsbyjs/potrace" "^2.2.0"
     "fastq" "^1.13.0"
     "fs-extra" "^10.1.0"
-    "gatsby-core-utils" "^3.20.0"
-    "gatsby-sharp" "^0.14.0"
+    "gatsby-core-utils" "^3.21.0"
+    "gatsby-sharp" "^0.15.0"
     "graphql-compose" "^9.0.7"
     "import-from" "^4.0.0"
     "joi" "^17.4.2"
@@ -6333,6 +6344,14 @@
   dependencies:
     "@types/sharp" "^0.30.0"
     "sharp" "^0.30.3"
+
+"gatsby-sharp@^0.15.0":
+  "integrity" "sha512-JtW6lLW5GmuQSyZ5l64Cg1qjXhFsMDAf9nzc2RC8srf6hsr2ifI0vTCHh0jImFXQqseaQ3HVlbCKYMbDtXXCIg=="
+  "resolved" "https://registry.npmjs.org/gatsby-sharp/-/gatsby-sharp-0.15.0.tgz"
+  "version" "0.15.0"
+  dependencies:
+    "@types/sharp" "^0.30.5"
+    "sharp" "^0.30.7"
 
 "gatsby-source-filesystem@^4.19.0":
   "integrity" "sha512-UUBEqRCKpq/rWX5K8Kizmoi2Cls9oOTEtZRUrhdtMqpz5Y6VAmd7Pwina03r0fej+AoebZWOEzPTOh+WhpIDFw=="
@@ -10984,7 +11003,7 @@
   "resolved" "https://registry.npmjs.org/shallow-compare/-/shallow-compare-1.2.2.tgz"
   "version" "1.2.2"
 
-"sharp@^0.30.3":
+"sharp@^0.30.3", "sharp@^0.30.7":
   "integrity" "sha512-G+MY2YW33jgflKPTXXptVO28HvNOo9G3j0MybYAHeEmby+QuD2U98dT6ueht9cv/XDqZspSpIhoSW+BAKJ7Hig=="
   "resolved" "https://registry.npmjs.org/sharp/-/sharp-0.30.7.tgz"
   "version" "0.30.7"

@@ -18,6 +18,12 @@ module.exports = {
         path: `${__dirname}/blog`,
       },
     },
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/film-strip.png",
+      },
+    },
     "gatsby-transformer-sharp",
     {
       resolve: `gatsby-transformer-remark`,

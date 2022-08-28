@@ -1,12 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import info from "../assets/info.png";
-// import user from "../assets/user.png";
-import note from "../assets/notebook.png";
-
 const mainNavItems = [
-  { url: "/blogs", icon: note, label: "Writing" },
+  { url: "/blogs", label: "Writing" },
   // { url: "/about", icon: info, label: "About me" },
 ];
 

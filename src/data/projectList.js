@@ -1,16 +1,16 @@
-import icon from "../images/icon.png";
 import cyberrun from "../images/cyberrun.png";
 import carlclub from "../images/Carlclub_logo.png";
 import icecream from "../images/icecream_logo.png";
 import cosign from "../images/Cosign_logo.png";
+import site from "../images/film-strip.png";
 export const projectLists = [
   {
     name: "My personal website",
     date: "2022",
     slug: "/",
     tagline: "My personal website using gatsby",
-    writeup: "/",
-    image: icon,
+    writeup: "https://github.com/tutingjun/petertu.gatsbyjs.io",
+    image: site,
   },
   {
     name: "CyberRun",
