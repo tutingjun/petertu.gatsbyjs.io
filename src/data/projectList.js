@@ -2,6 +2,7 @@ import icon from "../images/icon.png";
 import cyberrun from "../images/cyberrun.png";
 import carlclub from "../images/Carlclub_logo.png";
 import icecream from "../images/icecream_logo.png";
+import cosign from "../images/Cosign_logo.png";
 export const projectLists = [
   {
     name: "My personal website",
@@ -41,7 +42,7 @@ export const projectLists = [
     date: "2019",
     slug: "https://github.com/tutingjun/COSIGN",
     tagline: "An American sign language interpreter using VGG-16",
-    writeup: "/",
-    image: icon,
+    writeup: "/blog/cosign",
+    image: cosign,
   },
 ];

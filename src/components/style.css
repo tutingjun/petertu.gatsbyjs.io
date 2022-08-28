@@ -264,6 +264,10 @@ p.hero-description {
   gap: 1rem;
 }
 
+.project-image {
+  width: 65px;
+}
+
 @media screen and (min-width: 700px) {
   .highlight-preview {
     grid-template-columns: repeat(2, 1fr);
@@ -410,8 +414,10 @@ p.hero-description {
 }
 
 .index-images {
-  height: 65px;
-  width: auto;
+  width: 65px;
+  height: auto;
+  display: block;
+  margin: auto;
 }
 
 /* Headings */
@@ -822,7 +828,7 @@ a.post p {
 
 .post-sidebar .tags {
   gap: 0.3rem;
-  max-width: fit-content;
+  max-width: 210px;
 }
 
 .post-sidebar .button {
@@ -1118,6 +1124,7 @@ pre[class*="language-"] {
 
 .typewriter {
   color: #047bb7;
+  /* font-family: var(--font-family-monospace); */
 }
 
 .subheading {

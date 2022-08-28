@@ -98,11 +98,13 @@ const IndexPage = ({ data }) => {
           {projectLists.map((project) => {
             return (
               <div className="muted card flex">
-                <img
-                  src={project.image}
-                  alt="test Images"
-                  className="index-images"
-                />
+                <div className="project-image">
+                  <img
+                    src={project.image}
+                    alt="test Images"
+                    className="index-images"
+                  />
+                </div>
                 <div>
                   <p>{project.date}</p>
                   <a
