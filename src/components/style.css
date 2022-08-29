@@ -803,7 +803,11 @@ a.post p {
 }
 
 .post-sidebar-card .button-links {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+.post-sidebar-card .button-links h2 {
+  margin-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 900px) {
