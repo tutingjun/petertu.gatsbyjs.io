@@ -75,12 +75,17 @@ export const Sidebar = ({
                 return (
                   <div class={`expand-btn ${links[link_cat].className}`}>
                     <div class="content">
-                      <div class="imgBx">
+                      <a
+                        class="imgBx"
+                        href={link[link_cat]}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         <img
                           src={links[link_cat].icon}
                           alt={links[link_cat].text}
                         />
-                      </div>
+                      </a>
                     </div>
                     <a
                       class="sci"
