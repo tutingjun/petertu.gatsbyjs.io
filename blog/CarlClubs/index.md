@@ -4,6 +4,7 @@ date: "2022-03-13"
 slug: "/blog/carlclub"
 tag: ["Omeka", "Digital Humanities", "fun@carleton"]
 category: "Project"
+source: "https://hhfinals.dgah.sites.carleton.edu/carlclubs/"
 ---
 
 ![Screenshot of the Website](./carlclub4.png)

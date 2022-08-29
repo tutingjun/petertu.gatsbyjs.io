@@ -4,13 +4,15 @@ date: "2021-07-01"
 slug: "/blog/love-me-some-ice-cream"
 tag: ["Web design", "Flask"]
 category: "Project"
+github: "https://github.com/tutingjun/LoveMeSomeIceCream"
+source: "https://ice-cream-explorer.herokuapp.com"
 ---
 
 ![Screenshot of the website](./love-me-some-ice-cream1.png)
 
 <p class="figure-caption"><em>Front page of the website</em></p>
 
-This website allows ice cream lovers and customers to explore information, such as ratings, reviews, and ingredients, for various ice cream flavors from four popular brands. It can base on the user's input to query the database using pure SQL. This website is built by Flask with the help of bootstrap in the front end. This project collaborates with [Helen Du](https://github.com/helenduz) & [Yucheng Yang](https://github.com/YuchengY). Here is the [Github](https://github.com/tutingjun/LoveMeSomeIceCream) link for the source code.
+This website allows ice cream lovers and customers to explore information, such as ratings, reviews, and ingredients, for various ice cream flavors from four popular brands. It can base on the user's input to query the database using pure SQL. This website is built by Flask with the help of bootstrap in the front end. This project collaborates with [Helen Du](https://github.com/helenduz) & [Yucheng Yang](https://github.com/YuchengY).
 
 ## Functionality
 

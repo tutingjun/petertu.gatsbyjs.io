@@ -4,6 +4,7 @@ date: "2022-03-19"
 slug: "/blog/CyberRun"
 tag: ["Game Design", "Game Maker Studio"]
 category: "Project"
+source: "https://gxc.gg/games/8rd3si/cyber-run/"
 ---
 
 ![Screenshot of the game](./cyberrun.png)

@@ -2,36 +2,38 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import { Sidebar } from "../components/Sidebar";
+import { convertPageData } from "../utils/helper";
 // import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
 export default function Template({ data }) {
   const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
   const showPage = false;
-
+  const convertData = convertPageData(markdownRemark);
   // const image = getImage(frontmatter.hero_image);
   return (
-    <Layout pageTitle={frontmatter.title} showPage={showPage}>
+    <Layout pageTitle={convertData.title} showPage={showPage}>
       <div className="grid">
         <div className="article-content">
           <div className="post-header medium width">
-            <h1>{frontmatter.title}</h1>
+            <h1>{convertData.title}</h1>
           </div>
 
           <section className="segment small">
             <div
-              id={frontmatter.slug}
+              id={convertData.slug}
               className="post-content"
-              dangerouslySetInnerHTML={{ __html: html }}
+              dangerouslySetInnerHTML={{ __html: convertData.html }}
             />
           </section>
         </div>
 
         <Sidebar
-          tags={frontmatter.tag}
-          category={frontmatter.category}
-          date={frontmatter.date}
-          timeToRead={markdownRemark.fields.readingTime.text}
+          tags={convertData.tags}
+          category={convertData.category}
+          date={convertData.date}
+          timeToRead={convertData.readingTime}
+          link={convertData.links}
+          linkCate={convertData.linkCategory}
         />
       </div>
     </Layout>
@@ -48,6 +50,9 @@ export const pageQuery = graphql`
         date(formatString: "MMM DD, YYYY")
         slug
         title
+        github
+        source
+        wordpress
       }
       fields {
         readingTime {

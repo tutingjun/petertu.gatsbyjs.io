@@ -4,9 +4,8 @@ date: "2022-03-02"
 slug: "/blog/omeka-csv-import+-tutorial"
 tag: ["Omeka", "DGAH Class Blog Post", "tutorial"]
 category: "Digital Humanities"
+wordpress: "https://hh2022.amason.sites.carleton.edu/week-9-project-preparation/omeka-csv-import-tutorial/"
 ---
-
-<blockquote class = "origin"> <p>This post is orginally post on <a href="https://hh2022.amason.sites.carleton.edu/week-9-project-preparation/omeka-csv-import-tutorial/">Wordpres</a></p></blockquote>
 
 Omeka is a content management system and web publishing platform designed specifically for Digital Humanities, which can store and organize metadata. This platform is mainly used for building collections of a set of data and then organized into different categories. Most of the time, the size of data might be too large thus it is not reasonable to manually input those data into Omeka. Importing all the data using a CSV file might be a better approach. This tutorial will introduce a plugin in Omeka called CVS import+, which allows the user to import items from a CSV file. More importantly, this plugin can also convert certain data entries into files or geolocation, which can further facilitate the process of creating items in Omeka.
 

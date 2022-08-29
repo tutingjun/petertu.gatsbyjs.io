@@ -4,9 +4,8 @@ date: "2022-01-15"
 slug: "/blog/analysis-of-the-rhythm-of-food"
 tag: ["Project Analysis", "DGAH Class Blog Post"]
 category: "Digital Humanities"
+wordpress: "https://hh2022.amason.sites.carleton.edu/week-2/analysis-of-the-rhythm-of-food/"
 ---
-
-<blockquote class = "origin"> <p>This post is orginally post on <a href="https://hh2022.amason.sites.carleton.edu/week-2/analysis-of-the-rhythm-of-food/">Wordpres</a></p></blockquote>
 
 ![Screenshot of the website](./rhythm_of_food2.png)
 

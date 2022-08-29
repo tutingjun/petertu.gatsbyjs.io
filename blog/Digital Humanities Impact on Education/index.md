@@ -4,9 +4,8 @@ date: "2022-01-12"
 slug: "/blog/digital-humanities-impact-on-education"
 tag: ["Opinion", "DGAH Class Blog Post"]
 category: "Digital Humanities"
+wordpress: "https://hh2022.amason.sites.carleton.edu/week-2/digital-humanitys-impact-on-education/"
 ---
-
-<blockquote class = "origin"> <p>This post is orginally post on <a href="https://hh2022.amason.sites.carleton.edu/week-2/digital-humanitys-impact-on-education/">Wordpres</a></p></blockquote>
 
 > <em>The digital environment offers expanded possibilities for exploring multiple approaches to what constitutes knowledge and what methods qualify as valid for its production. …. Playful, imaginative, participatory work is not the enemy of education, but its exuberant and vital engine.</em><p style="font-size: 15px; margin-top: -1rem;margin-bottom: -0.5rem;">Burdick et al. <a href="https://www.dropbox.com/s/zcfhiphslciqe2k/9248.pdf?dl=1">“One: From Humanities to Digital Humanities,”</a> in Digital_Humanities (Cambridge, MA: MIT Press, 2012), 24.</p>
 

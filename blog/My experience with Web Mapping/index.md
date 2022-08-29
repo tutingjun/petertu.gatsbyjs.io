@@ -4,9 +4,8 @@ date: "2022-02-05"
 slug: "/blog/my-experience-with-web-mapping"
 tag: ["Web mapping", "DGAH Class Blog Post"]
 category: "Digital Humanities"
+wordpress: "https://hh2022.amason.sites.carleton.edu/week-5-3d/my-experience-with-web-mapping/"
 ---
-
-<blockquote class = "origin"> <p>This post is orginally post on <a href="https://hh2022.amason.sites.carleton.edu/week-5-3d/my-experience-with-web-mapping/">Wordpres</a></p></blockquote>
 
 ![Result of Digitizing Features for the Georeferenced Map](./my-experience-with-web-mapping.png)
 

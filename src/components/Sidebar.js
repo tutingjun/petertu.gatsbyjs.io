@@ -2,8 +2,36 @@ import React from "react";
 import { Link } from "gatsby";
 import { slugify } from "../utils/helper";
 
-export const Sidebar = ({ tags, category, date, timeToRead }) => {
-  // const tagList = tags.split(",")
+import github from "../assets/github.png";
+import link from "../assets/link.png";
+import wordpress from "../assets/wordpress.png";
+
+const links = {
+  github: {
+    text: "Source Code",
+    className: "github",
+    icon: github,
+  },
+  source: {
+    text: "Demo",
+    className: "source",
+    icon: link,
+  },
+  wordpress: {
+    text: "WordPress Link",
+    className: "wordpress",
+    icon: wordpress,
+  },
+};
+
+export const Sidebar = ({
+  tags,
+  category,
+  date,
+  timeToRead,
+  link,
+  linkCate,
+}) => {
   return (
     <aside className="post-sidebar">
       <div className="post-sidebar-card position-fix">
@@ -39,6 +67,35 @@ export const Sidebar = ({ tags, category, date, timeToRead }) => {
             );
           })}
         </div>
+        {linkCate.length !== 0 && (
+          <div className="button-links">
+            <h2>Links</h2>
+            <div className="expand-btn-group">
+              {linkCate.map((link_cat) => {
+                return (
+                  <div class={`expand-btn ${links[link_cat].className}`}>
+                    <div class="content">
+                      <div class="imgBx">
+                        <img
+                          src={links[link_cat].icon}
+                          alt={links[link_cat].text}
+                        />
+                      </div>
+                    </div>
+                    <a
+                      class="sci"
+                      href={link[link_cat]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {links[link_cat].text}
+                    </a>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
       </div>
     </aside>
   );

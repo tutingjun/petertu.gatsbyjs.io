@@ -6,6 +6,31 @@ export function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 
+export function convertPageData(data) {
+  const links = {
+    github: data.frontmatter.github,
+    wordpress: data.frontmatter.wordpress,
+    source: data.frontmatter.source,
+  };
+  Object.keys(links).forEach((key) => {
+    if (links[key] === null) {
+      delete links[key];
+    }
+  });
+  console.log(links);
+  return {
+    title: data.frontmatter.title,
+    slug: data.frontmatter.slug,
+    tags: data.frontmatter.tag,
+    category: data.frontmatter.category,
+    date: data.frontmatter.date,
+    readingTime: data.fields.readingTime.text,
+    html: data.html,
+    links: links,
+    linkCategory: Object.keys(links),
+  };
+}
+
 function convertData(posts) {
   return posts.map((post) => ({
     id: post.node.id,

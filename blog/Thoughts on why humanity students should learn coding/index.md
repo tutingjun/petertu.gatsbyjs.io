@@ -4,9 +4,8 @@ date: "2022-01-20"
 slug: "/blog/thoughts-on-why-humanity-students-should-learn-coding"
 tag: ["Opinion", "DGAH Class Blog Post", "Programming"]
 category: "Digital Humanities"
+wordpress: "https://hh2022.amason.sites.carleton.edu/week-3/thoughs-on-why-humanities-students-should-learn-coding/"
 ---
-
-<blockquote class = "origin"> <p>This post is orginally post on <a href="https://hh2022.amason.sites.carleton.edu/week-3/thoughs-on-why-humanities-students-should-learn-coding/">Wordpres</a></p></blockquote>
 
 I firmly believe that Humanity students should learn coding.
 

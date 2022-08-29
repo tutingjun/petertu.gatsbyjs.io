@@ -4,9 +4,8 @@ date: "2022-02-15"
 slug: "/blog/photogrammetry-of-buddha-preaching"
 tag: ["Photogrammetry", "DGAH Class Blog Post"]
 category: "Digital Humanities"
+wordpress: http://midterm.petertu.sites.carleton.edu"
 ---
-
-<blockquote class = "origin"> <p>This post is orginally post on <a href="http://midterm.petertu.sites.carleton.edu">Wordpres</a></p></blockquote>
 
 <div class="sketchfab-embed-wrapper"> <iframe width="100%" height="400" title="Peter Tu Midterm Photogrammetry Result" frameborder="0" allowfullscreen="" mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking="" execution-while-out-of-viewport="" execution-while-not-rendered="" web-share="" src="https://sketchfab.com/models/52ae06a6ad09491d94dfec594b486f3f/embed"> </iframe> </div>
 

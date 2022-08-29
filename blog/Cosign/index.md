@@ -10,6 +10,7 @@ tag:
     "python",
   ]
 category: "Project"
+github: "https://github.com/tutingjun/COSIGN"
 ---
 
 <blockquote class = "origin"> <p>This project is guided under Professor <a href = "https://sites.google.com/macalester.edu/susan-fox-profile/home">Susan Fox</a> from Macalester College and RA <a href = "https://mash.studio/">Mash Ibtesum</a> from Caleton College. Cocreated with <a href = "https://www.linkedin.com/in/jason-barnett2/">Jason Barnett</a>.</p></blockquote>

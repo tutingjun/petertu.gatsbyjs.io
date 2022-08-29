@@ -4,9 +4,8 @@ date: "2022-02-02"
 slug: "/blog/georeferencing-africa"
 tag: ["Georeference", "DGAH Class Blog Post"]
 category: "Digital Humanities"
+wordpress: "https://hh2022.amason.sites.carleton.edu/week-5-3d/georeferencing-africa/"
 ---
-
-<blockquote class = "origin"> <p>This post is orginally post on <a href="https://hh2022.amason.sites.carleton.edu/week-5-3d/georeferencing-africa/">Wordpres</a></p></blockquote>
 
 ![Map Of Africa in 1720](./georeferencing-africa.jpg)
 

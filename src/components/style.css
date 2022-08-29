@@ -802,6 +802,10 @@ a.post p {
   margin: 2rem 0;
 }
 
+.post-sidebar-card .button-links {
+  margin-top: 1rem;
+}
+
 @media screen and (min-width: 900px) {
   .position-fix {
     position: fixed;
@@ -837,6 +841,90 @@ a.post p {
 
 .post-sidebar a:hover {
   text-decoration: underline;
+}
+
+.expand-btn-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.expand-btn {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  margin-right: 0.5rem;
+  border-radius: 100px;
+  display: flex;
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.expand-btn.github:hover {
+  width: 150px;
+  border: 1px solid #868e96;
+  transition: 0.3s;
+}
+
+.expand-btn.wordpress:hover {
+  width: 170px;
+  border: 1px solid #868e96;
+  transition: 0.15s;
+}
+.expand-btn.source:hover {
+  width: 100px;
+  border: 1px solid #868e96;
+  transition: 0.15s;
+}
+
+.expand-btn .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3s;
+  padding-left: 0.3rem;
+}
+
+.expand-btn:hover .content .imgBx {
+  width: 35px;
+  height: 35px;
+  transform: width, height;
+}
+
+.expand-btn .content .imgBx {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.expand-btn .content .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.expand-btn .sci {
+  position: absolute;
+  align-self: center;
+  display: flex;
+}
+
+.expand-btn .sci {
+  transform: translateX(10px);
+  transition: 0.2s;
+  opacity: 0;
+  font-size: 0.9rem;
+  padding: 0 4px;
+}
+
+.expand-btn:hover .sci {
+  transform: translateX(40px);
+  opacity: 1;
 }
 
 /* Tags and categories */
