@@ -67,6 +67,7 @@ export const Sidebar = ({
             );
           })}
         </div>
+
         {linkCate.length !== 0 && (
           <div className="button-links">
             <h2>Links</h2>

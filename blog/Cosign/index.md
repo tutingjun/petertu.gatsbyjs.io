@@ -2,13 +2,7 @@
 title: "Cosign"
 date: "2019-08-01"
 slug: "/blog/cosign"
-tag:
-  [
-    "Machine learning",
-    "Convolutional Neural Network",
-    "American Sign Language",
-    "python",
-  ]
+tag: ["Machine learning", "CNN", "American Sign Language", "python"]
 category: "Project"
 github: "https://github.com/tutingjun/COSIGN"
 ---
