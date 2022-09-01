@@ -1,6 +1,6 @@
 # This is my personal website using Gatsby
 
-This website is built using Gatsby Framework with the help of React, Node.js, and GraphiQL. It is hosted on Gatsby Cloud. This project took inspiration on [taniarascia.com](https://www.taniarascia.com). (GitHub repo: [Link](https://github.com/taniarascia/taniarascia.com)) Currently, it supports integrating a `.md` page into the blog post. The project is still under development and will have a more comprehensive write-out when the first version is ready.
+This website is built using Gatsby Framework with the help of React, Node.js, and GraphiQL. It is hosted on Gatsby Cloud. This project took inspiration from [taniarascia.com](https://www.taniarascia.com). (GitHub repo: [Link](https://github.com/taniarascia/taniarascia.com)) Currently, it supports integrating a `.md` page into the blog post. The project is still under development and will have a more comprehensive write-out when the first version is ready.
 
 ## To DO
 
@@ -14,7 +14,7 @@ This website is built using Gatsby Framework with the help of React, Node.js, an
 - [ ] Add SEO for each page
 - [ ] Possible table of contents for each blog post, using
 
-```
+```GraphiQL
 headings {
       value
       depth
@@ -29,7 +29,7 @@ Make sure node.js, yarn, react.js, and gatsby are installed in your system
 
 ## How to Run:
 
-```
+```bash
 npm install --legacy-peer-deps
 
 gatsby develop
