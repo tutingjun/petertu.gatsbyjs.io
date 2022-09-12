@@ -55,3 +55,14 @@ export function getYearList(posts) {
   });
   return postsByYear;
 }
+
+export function isEnglish(text) {
+  var english = /^[A-Za-z0-9]*$/;
+  text = text.split(" ").join("");
+  for (var i = 0; i < text.length; i++) {
+    if (!english.test(text[i])) {
+      return false;
+    }
+  }
+  return true;
+}

@@ -27,28 +27,30 @@ export const PostSideBar = ({ selectedElement, isTagPage }) => {
         <h2>Category</h2>
         <div className="list">
           {categories.map((category) => {
-            return (
-              <Link
-                key={category.name}
-                to={
-                  isTagPage
-                    ? `/cats/${slugify(category.name)}`
-                    : selectedElement === category.name
-                    ? `/blogs`
-                    : `/cats/${slugify(category.name)}`
-                }
-                className={
-                  isTagPage
-                    ? "category"
-                    : selectedElement === category.name
-                    ? "category active"
-                    : "category"
-                }
-              >
-                <div className="name">{capitalize(category.name)}</div>
-                <div className="count">{category.totalCount}</div>
-              </Link>
-            );
+            if (category.name !== "") {
+              return (
+                <Link
+                  key={category.name}
+                  to={
+                    isTagPage
+                      ? `/cats/${slugify(category.name)}`
+                      : selectedElement === category.name
+                      ? `/blogs`
+                      : `/cats/${slugify(category.name)}`
+                  }
+                  className={
+                    isTagPage
+                      ? "category"
+                      : selectedElement === category.name
+                      ? "category active"
+                      : "category"
+                  }
+                >
+                  <div className="name">{capitalize(category.name)}</div>
+                  <div className="count">{category.totalCount}</div>
+                </Link>
+              );
+            }
           })}
         </div>
       </div>

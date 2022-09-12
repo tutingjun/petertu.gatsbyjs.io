@@ -4,7 +4,7 @@ import { graphql, Link } from "gatsby";
 
 import "../components/style.css";
 import { PostSideBar } from "../components/PostSideBar";
-import { getYearList } from "../utils/helper";
+import { getYearList, isEnglish } from "../utils/helper";
 
 const BlogPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
@@ -21,12 +21,16 @@ const BlogPage = ({ data }) => {
           {years.map((year) => (
             <div className="segment">
               <h2 className="year">{year}</h2>
-              {postsByYear[year].map((post) => (
-                <Link to={post.slug} className="post">
-                  <h3>{post.title} </h3>
-                  <p>{post.date}</p>
-                </Link>
-              ))}
+              {postsByYear[year].map((post) => {
+                if (isEnglish(post.title)) {
+                  return (
+                    <Link to={post.slug} className="post">
+                      <h3>{post.title} </h3>
+                      <p>{post.date}</p>
+                    </Link>
+                  );
+                }
+              })}
             </div>
           ))}
         </div>

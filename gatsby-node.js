@@ -66,7 +66,7 @@ const createPages = async ({ actions, graphql }) => {
     });
   });
 
-  const cateList = Array.from(categorySet);
+  const cateList = Array.from(categorySet).filter((cat) => cat != "");
   cateList.forEach((cat) => {
     createPage({
       path: `/cats/${slugify(cat)}/`,

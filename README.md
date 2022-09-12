@@ -23,6 +23,8 @@ headings {
 
 in GraphiQL
 
+- [ ] Slow loading of images in blog posts
+
 ## Requirements
 
 Make sure node.js, yarn, react.js, and gatsby are installed in your system
