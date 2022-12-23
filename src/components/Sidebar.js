@@ -8,7 +8,7 @@ import wordpress from "../assets/wordpress.png";
 
 const links = {
   github: {
-    text: "Source Code",
+    text: "Source",
     className: "github",
     icon: github,
   },
@@ -18,7 +18,7 @@ const links = {
     icon: link,
   },
   wordpress: {
-    text: "WordPress Link",
+    text: "WordPress",
     className: "wordpress",
     icon: wordpress,
   },

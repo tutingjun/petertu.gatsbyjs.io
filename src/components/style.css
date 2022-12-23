@@ -863,13 +863,13 @@ a.post p {
 }
 
 .expand-btn.github:hover {
-  width: 150px;
+  width: 110px;
   border: 1px solid #868e96;
   transition: 0.3s;
 }
 
 .expand-btn.wordpress:hover {
-  width: 170px;
+  width: 140px;
   border: 1px solid #868e96;
   transition: 0.15s;
 }
