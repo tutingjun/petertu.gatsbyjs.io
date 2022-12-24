@@ -17,7 +17,6 @@ export function convertPageData(data) {
       delete links[key];
     }
   });
-  console.log(links);
   return {
     title: data.frontmatter.title,
     slug: data.frontmatter.slug,

@@ -1,8 +1,8 @@
-var AWS_KEY = process.env.AWS_KEY;
-var AWS_SECRET = process.env.AWS_SECRET;
-var BUCKET = process.env.BUCKET;
-var PREFIX = process.env.PREFIX;
-var API_ENDPOINT = process.env.API_ENDPOINT;
+var AWS_KEY = process.env.PHOTO_AWS_KEY;
+var AWS_SECRET = process.env.PHOTO_AWS_SECRET;
+var BUCKET = process.env.PHOTO_BUCKET;
+var PREFIX = process.env.PHOTO_PREFIX;
+var API_ENDPOINT = process.env.PHOTO_API_ENDPOINT;
 
 function slugify(string) {
   return string.toLowerCase().replace(" ", "-");
