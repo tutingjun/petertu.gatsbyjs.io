@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 
 const mainNavItems = [
   { url: "/blogs", label: "Writing" },
+  { url: "/photos", label: "Photography" },
   // { url: "/about", icon: info, label: "About me" },
 ];
 
