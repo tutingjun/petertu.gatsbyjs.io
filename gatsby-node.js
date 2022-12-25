@@ -207,7 +207,7 @@ const createPages = async ({ actions, graphql }) => {
       },
     });
   });
-
+  console.log(photos);
   createPage({
     path: "/photos",
     component: photoTemplate,

@@ -152,6 +152,12 @@ main {
   flex: 1;
 }
 
+hr.solid {
+  border: 0;
+  border-top: 1px solid var(--border-color);
+  margin: 0.6rem 0 0.3rem 0;
+}
+
 /* Hero */
 
 .hero {
@@ -418,6 +424,24 @@ p.hero-description {
   height: auto;
   display: block;
   margin: auto;
+}
+
+.photo-card {
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 15rem;
+  line-height: 0.3rem;
+}
+.photo-card p {
+  margin-bottom: 0.2rem;
+  font-size: 13px;
+}
+.photo-card .camera-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
 }
 
 /* Headings */

@@ -19,6 +19,7 @@
     "@mdx-js/react": "^1.6.22",
     "async": "^3.2.4",
     "aws-sdk": "^2.1282.0",
+    "bootstrap": "^5.2.3",
     "gatsby": "^4.20.0",
     "gatsby-plugin-image": "^2.20.0",
     "gatsby-plugin-manifest": "^4.21.0",
@@ -36,7 +37,9 @@
     "piexifjs": "^1.0.6",
     "prismjs": "^1.28.0",
     "react": "^18.1.0",
+    "react-bootstrap": "^2.7.0",
     "react-dom": "^18.1.0",
+    "react-images": "^1.2.0-beta.7",
     "react-photo-gallery": "^8.0.0",
     "react-simple-typewriter": "^3.0.1"
   }
