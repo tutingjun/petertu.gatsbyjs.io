@@ -5,7 +5,7 @@ export const PhotoFooter = ({ photoInfo }) => {
     <div className="card photo-card">
       <p className="photo-card-title">{photoInfo.camera}</p>
       <p className="photo-card-title">{photoInfo.lens}</p>
-      <hr class="solid" />
+      <hr className="solid" />
       <div className="camera-stats">
         <p>{"ISO " + photoInfo.iso}</p>
         <p>{photoInfo.focalLength + " mm"}</p>

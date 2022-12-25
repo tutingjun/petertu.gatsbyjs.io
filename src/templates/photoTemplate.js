@@ -35,7 +35,6 @@ export default function PhotoTemplate({ pageContext }) {
         <PhotoFooter photoInfo={currentView} />
       </div>
     ) : null;
-  const fullscreen = ({ currentView, isModal }) => null;
 
   return (
     <Layout pageTitle={"camera test"} showPages={false}>
@@ -48,7 +47,6 @@ export default function PhotoTemplate({ pageContext }) {
             <Carousel
               components={{
                 FooterCaption: FooterCaption,
-                HeaderFullscreen: fullscreen,
               }}
               currentIndex={currentImage}
               views={photoInfos}
@@ -56,16 +54,6 @@ export default function PhotoTemplate({ pageContext }) {
           </Modal>
         ) : null}
       </ModalGateway>
-      {/* {photoInfos.map((photoInfo) => (
-        <div>
-          {Object.entries(photoInfo).map((singleInfo) => (
-            <div>
-              <p>{singleInfo[0]}</p>
-              <p>{singleInfo[1]}</p>
-            </div>
-          ))}
-        </div>
-      ))} */}
     </Layout>
   );
 }
