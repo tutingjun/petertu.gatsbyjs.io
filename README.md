@@ -4,26 +4,10 @@ This website is built using Gatsby Framework with the help of React, Node.js, an
 
 ## To DO
 
-- [x] Change Frontpage
-- [x] Add support for the code block (inline code block)
-- [x] Add support for backquote
-- [ ] Figure out the display of video and images slide show --> a portfolio page
-- [x] Weird format for phone
-- [x] Click the selected category the second time and go back to the `/blog` page
-- [x] Add more blog posts for all the projects with the icon images
-- [ ] Add SEO for each page
-- [ ] Possible table of contents for each blog post, using
-
-```GraphiQL
-headings {
-      value
-      depth
-}
-```
-
-in GraphiQL
-
-- [ ] Slow loading of images in blog posts
+- [ ] Update photography page
+- [ ] Add a photo overview page
+- [ ] Change front page layout to include font page
+- [ ] Python curl of douban?
 
 ## Requirements
 
