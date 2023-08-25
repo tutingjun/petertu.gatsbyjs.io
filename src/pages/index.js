@@ -43,7 +43,7 @@ const IndexPage = ({ data }) => {
             </div>
           </div>
           <p className="hero-description">
-            I am a junior computer science major at Carleton College, aiming to
+            I am a senior computer science major at Carleton College, aiming to
             become a full stack developer. I enjoy movies, video games, and
             photography.
             <br />
