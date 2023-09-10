@@ -3,9 +3,8 @@ import { graphql } from "gatsby";
 import Layout from "../components/layout";
 import { Sidebar } from "../components/Sidebar";
 import { convertPageData } from "../utils/helper";
-// import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-export default function Template({ data }) {
+export default function BlogTemplate({ data }) {
   const { markdownRemark } = data;
   const showPage = false;
   const convertData = convertPageData(markdownRemark);
@@ -53,11 +52,6 @@ export const pageQuery = graphql`
         github
         source
         wordpress
-      }
-      fields {
-        readingTime {
-          text
-        }
       }
     }
   }

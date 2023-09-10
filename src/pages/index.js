@@ -1,12 +1,16 @@
-// Step 1: Import React
 import * as React from "react";
+import { useState } from "react";
 import Layout from "../components/layout";
 import { graphql, Link } from "gatsby";
 import { capitalize, slugify } from "../utils/helper";
 import { projectLists } from "../data/projectList";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { Typewriter } from "react-simple-typewriter";
 
-const TypewriterHook = () => {
+// Step 2: Define your component
+const IndexPage = ({ data }) => {
+  const recent = data.allMarkdownRemark.edges;
+  const [count, setCount] = useState(0);
+
   const wordArray = [
     "a programmer",
     "a photographer",
@@ -14,36 +18,32 @@ const TypewriterHook = () => {
     "a movie lover",
     "a video game enthusiast",
   ];
-  const { text, count } = useTypewriter({
-    words: wordArray,
-    loop: true,
-    autoStart: true,
-    typeSpeed: 100,
-  });
 
-  return (
-    <div className={`typewriter-text-${count % wordArray.length}`}>
-      <span>{text}</span>
-      <Cursor />
-    </div>
-  );
-};
-
-// Step 2: Define your component
-const IndexPage = ({ data }) => {
-  const recent = data.allMarkdownRemark.edges;
   return (
     <Layout pageTitle="Home Page" slug="./">
       <div className="hero-wrapper">
         <header className="hero index">
           <h1>Hi, I'm Peter Tu</h1>
           <div className="subheading">
-            <div className="typewriter">
-              <TypewriterHook />
+            <div
+              className={`typewriter typewriter-text-${
+                count % wordArray.length
+              }`}
+            >
+              <Typewriter
+                words={wordArray}
+                cursor={true}
+                loop={true}
+                autoStart={true}
+                typeSpeed={100}
+                onType={(counter) => {
+                  setCount(counter);
+                }}
+              />
             </div>
           </div>
           <p className="hero-description">
-            I am a junior computer science major at Carleton College, aiming to
+            I am a senior computer science major at Carleton College, aiming to
             become a full stack developer. I enjoy movies, video games, and
             photography.
             <br />
@@ -51,12 +51,6 @@ const IndexPage = ({ data }) => {
             This is my space to record what I love and enjoy.
           </p>
         </header>
-        {/* <div className="decoration">
-          <StaticImage
-            alt="Random images from unsplash"
-            src="https://images.unsplash.com/photo-1518893494013-481c1d8ed3fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-          />
-        </div> */}
       </div>
 
       <section className="segment">
@@ -129,10 +123,7 @@ const IndexPage = ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark(
-      sort: { fields: frontmatter___date, order: DESC }
-      limit: 5
-    ) {
+    allMarkdownRemark(sort: { frontmatter: { date: DESC } }, limit: 5) {
       edges {
         node {
           frontmatter {

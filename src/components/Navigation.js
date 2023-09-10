@@ -2,9 +2,8 @@ import React from "react";
 import { Link } from "gatsby";
 
 const mainNavItems = [
-  { url: "/blogs", label: "Writing" },
   { url: "/photos", label: "Photography" },
-  // { url: "/about", icon: info, label: "About me" },
+  { url: "/blogs", label: "Writing" },
 ];
 
 export const Navigation = ({ slug }) => {

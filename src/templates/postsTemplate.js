@@ -56,7 +56,7 @@ export default function PostsTemplate({ data, pageContext }) {
 export const query = graphql`
   query Pages($key: String, $isTagPage: Boolean!, $isCatPage: Boolean!) {
     category: allMarkdownRemark(
-      sort: { fields: frontmatter___date, order: DESC }
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { category: { in: [$key] } } }
     ) @include(if: $isCatPage) {
       totalCount
@@ -74,9 +74,8 @@ export const query = graphql`
         }
       }
     }
-
     tag: allMarkdownRemark(
-      sort: { fields: frontmatter___date, order: DESC }
+      sort: { frontmatter: { date: DESC } }
       filter: { frontmatter: { tag: { in: [$key] } } }
     ) @include(if: $isTagPage) {
       totalCount

@@ -427,10 +427,18 @@ p.hero-description {
 }
 
 .photo-card {
+  position: fixed;
+  right: 1rem;
   padding: 0.5rem;
   border-radius: 10px;
-  width: 15rem;
+  width: 13rem;
   line-height: 0.3rem;
+}
+.photo-card hr {
+  margin: 0.3rem 0 !important;
+}
+.photo-card-title {
+  text-align: center;
 }
 .photo-card p {
   margin-bottom: 0.2rem;
@@ -441,7 +449,7 @@ p.hero-description {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1.6rem;
+  gap: 1rem;
 }
 
 /* Headings */

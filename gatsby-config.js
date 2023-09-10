@@ -1,16 +1,15 @@
+/**
+ * @type {import('gatsby').GatsbyConfig}
+ */
+
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
 module.exports = {
   siteMetadata: {
-    title: `Peter Tu`,
-    author: {
-      name: "Peter Tu",
-      name: "Tingjun Tu",
-    },
-    description:
-      "This is my personal website developed by Peter Tu at Carleton College",
+    title: `web2`,
+    siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
     "gatsby-plugin-image",
@@ -39,7 +38,7 @@ module.exports = {
         // Plugins configs
         plugins: [
           `gatsby-remark-autolink-headers`,
-          `gatsby-remark-reading-time`,
+          // `gatsby-remark-reading-time`,
           {
             resolve: "gatsby-remark-embed-video",
             options: {
@@ -93,7 +92,16 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        },
+      },
+    },
     "react-simple-typewriter",
-    "react-photo-gallery",
+    "piexifjs",
+    "@aws-sdk/client-s3",
   ],
 };

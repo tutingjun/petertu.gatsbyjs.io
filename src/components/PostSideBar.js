@@ -6,12 +6,11 @@ export const PostSideBar = ({ selectedElement, isTagPage }) => {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark {
-        tags: group(field: frontmatter___tag) {
+        tags: group(field: { frontmatter: { tag: SELECT } }) {
           name: fieldValue
           totalCount
         }
-
-        categories: group(field: frontmatter___category) {
+        categories: group(field: { frontmatter: { category: SELECT } }) {
           name: fieldValue
           totalCount
         }

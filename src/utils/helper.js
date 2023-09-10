@@ -23,7 +23,7 @@ export function convertPageData(data) {
     tags: data.frontmatter.tag,
     category: data.frontmatter.category,
     date: data.frontmatter.date,
-    readingTime: data.fields.readingTime.text,
+    // readingTime: data.fields.readingTime.text,
     html: data.html,
     links: links,
     linkCategory: Object.keys(links),
@@ -64,4 +64,19 @@ export function isEnglish(text) {
     }
   }
   return true;
+}
+
+const gcd = (a, b) => {
+  return b ? gcd(b, a % b) : a;
+};
+
+export function aspectRatio(width, height) {
+  const divisor = gcd(width, height);
+  width /= divisor;
+  height /= divisor;
+  return { width, height };
+}
+
+export function isImage(fileName) {
+  return fileName.match(/\.(jpg|jpeg|png|gif)$/i) !== null;
 }
