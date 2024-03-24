@@ -21,7 +21,7 @@ const Layout = ({ pageTitle, children, slug }) => {
       </title>
       <Navigation slug={slug} />
       <main>
-        <div className="container">{children}</div>
+        <div className="max-w-4xl mx-auto">{children}</div>
       </main>
       <Footer />
     </div>

@@ -30,6 +30,7 @@ const BlogPage = ({ data }) => {
                     </Link>
                   );
                 }
+                return null;
               })}
             </div>
           ))}

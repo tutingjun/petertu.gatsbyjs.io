@@ -50,6 +50,7 @@ export const PostSideBar = ({ selectedElement, isTagPage }) => {
                 </Link>
               );
             }
+            return null;
           })}
         </div>
       </div>

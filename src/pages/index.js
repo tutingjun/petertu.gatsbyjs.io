@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout pageTitle="Home Page" slug="./">
-      <div className="hero-wrapper">
+      <div className="pt-20">
         <header className="hero index">
           <h1>Hi, I'm Tingjun (Peter) Tu</h1>
           <div className="subheading">
