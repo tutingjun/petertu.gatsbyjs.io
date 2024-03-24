@@ -15,11 +15,6 @@ const links = [
     label: "Linkedin",
     icon: linkedin,
   },
-  {
-    url: "https://petertu.sites.carleton.edu",
-    label: "WordPress",
-    icon: wordpress,
-  },
 ];
 
 export const Footer = () => {
@@ -39,7 +34,7 @@ export const Footer = () => {
               width={24}
               height={24}
             />
-            &nbsp;tut@carleton
+            &nbsp;tutingjun@gmail.com
           </a>
         </nav>
         <nav>

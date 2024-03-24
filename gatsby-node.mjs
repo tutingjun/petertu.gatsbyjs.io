@@ -173,7 +173,6 @@ export const createPages = async ({ actions, graphql }) => {
       path: node.frontmatter.slug,
       component: BlogTemplate,
       context: {
-        // additional data can be passed via context
         slug: node.frontmatter.slug,
       },
     });

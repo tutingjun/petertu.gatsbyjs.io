@@ -52,7 +52,7 @@ export const Sidebar = ({
           </div>
         )}
 
-        {tags === [] && <h2>Tags</h2>}
+        {tags == [] && <h2>Tags</h2>}
         <div className="tags">
           {tags.map((tag) => {
             return (

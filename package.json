@@ -11,9 +11,7 @@
     "build": "rm -rf .cache && gatsby build",
     "develop": "rm -rf .cache && gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "npx --node-arg '-r esm' gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "start": "npm run develop"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.409.0",

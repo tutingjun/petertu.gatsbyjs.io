@@ -12,18 +12,17 @@ const IndexPage = ({ data }) => {
   const [count, setCount] = useState(0);
 
   const wordArray = [
-    "a programmer",
+    "a developer",
     "a photographer",
-    "an amateur director",
+    "a director",
     "a movie lover",
-    "a video game enthusiast",
   ];
 
   return (
     <Layout pageTitle="Home Page" slug="./">
       <div className="hero-wrapper">
         <header className="hero index">
-          <h1>Hi, I'm Peter Tu</h1>
+          <h1>Hi, I'm Tingjun (Peter) Tu</h1>
           <div className="subheading">
             <div
               className={`typewriter typewriter-text-${
