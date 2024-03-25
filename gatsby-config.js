@@ -8,8 +8,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `web2`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Peter Tu`,
+    siteUrl: `https://petertu.dev`,
   },
   plugins: [
     "gatsby-plugin-image",

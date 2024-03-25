@@ -15,7 +15,7 @@ const Layout = ({ pageTitle, children, slug }) => {
   `);
 
   return (
-    <div>
+    <div className="mx-5 sm:mx-10">
       <title>
         {pageTitle} | {data.site.siteMetadata.title}
       </title>

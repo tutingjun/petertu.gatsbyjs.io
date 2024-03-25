@@ -9,8 +9,8 @@ const mainNavItems = [
 export const Navigation = ({ slug }) => {
   return (
     <section className="navigation">
-      <div className=" flex max-w-4xl mx-auto">
-        <nav>
+      <div className=" mx-5 sm:mx-10">
+        <nav className="flex max-w-4xl mx-auto">
           <Link to="/" className="item brand">
             <span>Peter Tu</span>
           </Link>

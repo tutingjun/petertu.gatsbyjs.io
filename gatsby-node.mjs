@@ -60,22 +60,13 @@ function convertExif(exif, key, itemsToRecord) {
     }
   }
 
-  const photoInfo = {
-    camera: result["Make"] + " " + result["Model"],
-    lens: result["LensModel"],
-    shutter: result["ExposureTime"][0] + "/" + result["ExposureTime"][1],
-    fStop: result["FNumber"][0],
-    iso: result["ISOSpeedRatings"],
-    focalLength: result["FocalLengthIn35mmFilm"],
-    dateTime: result["DateTime"],
-    src: API_ENDPOINT + "/" + key,
-  };
   const photo = {
     width: result["PixelXDimension"],
     height: result["PixelYDimension"],
     src: API_ENDPOINT + "/" + key,
   };
-  return { photo, photoInfo };
+
+  return photo;
 }
 
 async function listS3Object(bucketName, prefix, filterFunction) {
@@ -129,9 +120,8 @@ export const createPages = async ({ actions, graphql }) => {
   const urls = await listS3Object(BUCKET, PREFIX, isImage);
 
   for (const url of urls) {
-    const { photo, photoInfo } = await getPhotoData(BUCKET, url);
+    const photo = await getPhotoData(BUCKET, url);
     photos.push(photo);
-    photoInfos.push(photoInfo);
   }
   console.log(photoInfos);
   const result = await graphql(`
@@ -210,7 +200,6 @@ export const createPages = async ({ actions, graphql }) => {
     component: PhotoTemplate,
     context: {
       photos: photos,
-      photoInfos: photoInfos,
     },
   });
 };

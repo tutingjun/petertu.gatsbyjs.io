@@ -8,10 +8,11 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
 import "../components/style.css";
-import { PhotoFooter } from "../components/PhotoFooter";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function PhotoTemplate({ pageContext }) {
-  const { photos, photoInfos } = pageContext;
+  const { photos } = pageContext;
 
   const [index, setIndex] = useState(-1);
   const [showInfo, setShowInfo] = useState(false);
@@ -20,7 +21,6 @@ export default function PhotoTemplate({ pageContext }) {
 
   return (
     <Layout pageTitle={"Chicago"} showPages={false}>
-      {showInfo && <PhotoFooter photoInfo={photoInfos[index]} />}
       <div className="post-header medium width">
         <h1>Chicago</h1>
       </div>
@@ -32,6 +32,19 @@ export default function PhotoTemplate({ pageContext }) {
           spacing={15}
           onClick={({ index }) => setIndex(index)}
           key={index}
+          renderPhoto={({
+            photo,
+            imageProps: { alt, title, sizes, className, onClick },
+            wrapperStyle,
+          }) => (
+            <div style={{ ...wrapperStyle, position: "relative" }}>
+              <LazyLoadImage
+                src={photo.src}
+                effect="blur"
+                {...{ alt, title, sizes, className, onClick }}
+              />
+            </div>
+          )}
         />
       </div>
       <Lightbox
